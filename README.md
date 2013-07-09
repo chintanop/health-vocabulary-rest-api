@@ -63,8 +63,12 @@ Install/Set up
 4. Load the MRCONSO.sql and MRREL.sql (pronounced as Mr. Conso, Mr. Rel) into database from command line as follows: 
 
   mysql -u&lt;user&gt; -p&lt;password&gt; &lt;db_name&gt; &lt; MRCONSO.sql
-  
+ 
+  alter table MRCONSO add column id int auto_increment primary key;
+
   mysql -u&lt;user&gt; -p&lt;password&gt; &lt;db_name&gt; &lt; MRREL.sql
+  
+  alter table MRREL add column id int auto_increment primary key;
   
 5. Run the app, python manage.py runserver
 6. For production environment, it is advised to host the app inside a [WSGI](https://docs.djangoproject.com/en/dev/howto/deployment/wsgi/) container.
@@ -93,3 +97,8 @@ Frequently Asked Questions
   Absolutely! Just shoot us an email at info@appliedinformaticsinc.com 
 
 
+* * *
+
+LICENSE
+-------
+Copyright (c) 2013 by Applied Informatics Inc. Licensed under the [Apache 2.0](http://www.apache.org/licenses/LICENSE-2.0.html) license.

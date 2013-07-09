@@ -40,6 +40,8 @@ class RelResource:
                     'rela':rel.RELA
                 })
 
+        return rels_list
+
 class MapResource:
     """ The Terminology Mapping resource """
 
