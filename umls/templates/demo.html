@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Health Vocabulary REST API Demo - Applied Informatics </title>
+    </head>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
+    <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+
+        $(document).ready(function(){
+            $("#lookup").submit(function(){
+                $.get("/code/"+$("#vocab").val()+"/"+$("#code").val(),function(response){
+                    $("#lookup_results").val(response);                   
+                });
+                return false;
+            });
+
+
+            $("#code_rel").submit(function(){
+                $.get("/rel/"+$("#rel_vocab").val()+"/"+$("#rel_code").val()+"/"+$("#rel_type").val(),function(response){
+                    $("#rel_results").val(response);                   
+                });
+                return false;
+            });
+            
+            $("#map_target").submit(function(){
+                $.get("/map/"+$("#source_vocab").val()+"/"+$("#source_code").val()+"/"+$("#target_vocab").val(),function(response){
+                    $("#map_results").val(response);                   
+                });
+                return false;
+            });
+
+        });
+        
+    </script>
+
+<body>
+    <div class="container">
+    <h1> Health Vocabulary REST API - Demo</h1> 
+
+    <hr>
+
+    <h2>Lookup Vocabulary Code</h2>
+
+    <table class="table">
+        <tr>
+            <td> 
+        <form method="GET" action="" id="lookup">
+            <label>Vocabulary:</label>
+                <input type="text" id="vocab" name="vocab" placeholder="Vocabulary name, e.g. LNC" value="LNC">
+                <p class="help-block">The terminology short code, e.g. SNOMEDCT, RXNORM <a href="http://www.nlm.nih.gov/research/umls/knowledge_sources/metathesaurus/release/source_vocabularies.html" target="_blank">Full List</a></p>
+            <label>Code Value:</label>
+            <input type="text" id="code" name="code" placeholder="Code value, e.g. 20563-3" value="20563-3">
+            <input type="submit" value="Lookup" class="btn btn-primary"/>
+        </form>
+            </td>
+            <td>
+                <textarea id="lookup_results" style="width:350px;height:80px">
+                </textarea>
+            </td>
+        </tr>
+    </table>
+    <hr>
+
+    <h2>Get Related Codes</h2>
+
+    <table class="table">
+        <tr>
+            <td> 
+        <form method="GET" action="" id="code_rel">
+            <label>Vocabulary:</label>
+                <input type="text" id="rel_vocab" name="rel_vocab" placeholder="Vocabulary name, e.g. LNC" value="LNC">
+                <p class="help-block">The terminology short code, e.g. SNOMEDCT, RXNORM <a href="http://www.nlm.nih.gov/research/umls/knowledge_sources/metathesaurus/release/source_vocabularies.html" target="_blank">Full List</a></p>
+            <label>Code Value:</label>
+            <input type="text" id="rel_code" name="rel_code" placeholder="Code value, e.g. 20563-3" value="20563-3">
+
+
+            <label>Relationship Type:</label>
+            <input type="text" id="rel_type" name="rel_type" value="is_diagnosed_by">
+
+            <input type="Submit" value="Get Related" class="btn btn-primary"/>
+        </form>
+            </td>
+            <td>
+                <textarea id="rel_results" style="width:350px;height:80px">
+                </textarea>
+            </td>
+        </tr>
+    </table>
+    <hr>
+
+    <h2>Map to a Target Vocabulary</h2>
+
+    <table class="table">
+        <tr>
+            <td> 
+        <form method="GET" action="" id="map_target">
+            <label>Source Vocabulary:</label>
+                <input type="text" id="source_vocab" name="source_vocab" placeholder="Vocabulary name, e.g. SNOMEDCT" value="SNOMEDCT">
+                <p class="help-block">The terminology short code, e.g. SNOMEDCT, RXNORM <a href="http://www.nlm.nih.gov/research/umls/knowledge_sources/metathesaurus/release/source_vocabularies.html" target="_blank">Full List</a></p>
+            <label>Source Code Value:</label>
+            <input type="text" id="source_code" name="code" placeholder="Code value, e.g. 2904007" value="2904007">
+
+            <label>Target Vocabulary:</label>
+                <input type="text" id="target_vocab" name="target_vocab" placeholder="Vocabulary name, e.g. ICD9CM" value="ICD9CM">
+                <p class="help-block">The terminology short code, e.g. SNOMEDCT, RXNORM <a href="http://www.nlm.nih.gov/research/umls/knowledge_sources/metathesaurus/release/source_vocabularies.html" target="_blank">Full List</a></p>
+            <input type="Submit" value="Perform Mapping" class="btn btn-primary"/>
+        </form>
+            </td>
+            <td>
+                <textarea id="map_results" style="width:350px;height:80px">
+                </textarea>
+            </td>
+        </tr>
+    </table>
+    <hr>
+
+    </div>
+</body>
+</html>
