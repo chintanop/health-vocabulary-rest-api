@@ -32,6 +32,13 @@
                 return false;
             });
 
+            $("#concept").submit(function(){
+                $.get("/concept/"+$("#cui").val(),function(response){
+                    $("#concept_results").val(response);
+                });
+                return false;
+            });
+
         });
         
     </script>
@@ -111,6 +118,44 @@
             </td>
             <td>
                 <textarea id="map_results" style="width:350px;height:80px">
+                </textarea>
+            </td>
+        </tr>
+    </table>
+    <hr>
+
+    <h2>Concept: Get full details for a concept</h2>
+
+    <table class="table">
+        <tr>
+            <td>
+        <form method="GET" action="" id="concept">
+            <label>Concept:</label>
+                <input type="text" id="cui" name="cui" placeholder="Concept , e.g. C0000005" value="C0000005">
+            <input type="submit" value="Concept" class="btn btn-primary"/>
+        </form>
+            </td>
+            <td>
+                <textarea id="concept_results" style="width:350px;height:80px">
+                </textarea>
+            </td>
+        </tr>
+    </table>
+    <hr>
+
+    <h2>Concept: Get all childrens for a given concept</h2>
+
+    <table class="table">
+        <tr>
+            <td>
+        <form method="GET" action="" id="children">
+            <label>Source Vocabularly:</label>
+            <input type="text" id="sab" name="sab" placeholder="Source Vocabularly" value="">
+            <input type="submit" value="Children" class="btn btn-primary"/>
+        </form>
+            </td>
+            <td>
+                <textarea id="concept_results" style="width:350px;height:80px">
                 </textarea>
             </td>
         </tr>

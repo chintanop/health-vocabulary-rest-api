@@ -61,7 +61,20 @@ class MapResource:
 
         return rterms
 
+class ConceptResource:
+    """ The Terminology Code resource """
 
+    def _get(self, cui):
+        terms = MRCONSO.objects.filter(CUI=cui)
+        rterms = []
+        for term in terms:
+            rterms.append({
+                'concept':term.CUI,
+                'pref_term':term.ISPREF,
+                'terms':term.STR,
+                'sabs':term.SAB,
+            })
+
+        return rterms
         
-
 

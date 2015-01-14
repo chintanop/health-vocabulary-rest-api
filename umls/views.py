@@ -3,6 +3,7 @@ from django.http import HttpResponse
 from umls.resources import CodeResource
 from umls.resources import RelResource
 from umls.resources import MapResource
+from umls.resources import ConceptResource
 
 import json
 
@@ -68,6 +69,26 @@ def map_resource_view(request, source_vocab, code_val, target_vocab):
     response    = json.dumps(rterms)
 
     #Handle AJAX Requests
+    if request.GET.has_key("callback"):
+          response = request.GET["callback"]+"("+response+")"
+
+    return HttpResponse(response)
+
+def concept_resource_view(request, cui):
+    """Get the full display name of a code for a given concept
+
+    GET /concept/<cui>
+
+    Parameters:
+
+    cui: The Concept code.
+
+    """
+
+    rterms =  ConceptResource()._get(cui)
+
+    #Handle AJAX Requests
+    response = json.dumps(rterms)
     if request.GET.has_key("callback"):
           response = request.GET["callback"]+"("+response+")"
 
