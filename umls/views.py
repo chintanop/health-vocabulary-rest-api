@@ -74,6 +74,27 @@ def map_resource_view(request, source_vocab, code_val, target_vocab):
 
     return HttpResponse(response)
 
+def concept_term_resource_view(request, str, sab):
+    """Get the full display name of a code for a given concept
+
+    GET /concept/<str>/<sab>
+
+    Parameters:
+
+    str: Term
+    sab: Source Vocab
+
+    """
+
+    rterms =  ConceptResource()._get_term(str, sab)
+    print '111111111'
+    #Handle AJAX Requests
+    response = json.dumps(rterms)
+    if request.GET.has_key("callback"):
+          response = request.GET["callback"]+"("+response+")"
+
+    return HttpResponse(response)
+
 def concept_resource_view(request, cui):
     """Get the full display name of a code for a given concept
 

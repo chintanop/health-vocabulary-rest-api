@@ -39,6 +39,19 @@
                 return false;
             });
 
+            $("#concept_term").submit(function(){
+                if ($("#sab").val()=="") {
+                    $.get("/concept/" + $("#str").val() + "/none", function (response) {
+                        $("#concept_term_results").val(response);
+                    });
+                }else{
+                    $.get("/concept/"+$("#str").val()+"/"+$("#sab").val(),function(response){
+                        $("#concept_term_results").val(response);
+                    });
+                }
+                return false;
+            });
+
         });
         
     </script>
@@ -122,6 +135,27 @@
             </td>
         </tr>
     </table>
+
+    <h2>Concept: Search concepts by term and source terminology (SAB)</h2>
+
+    <table class="table">
+        <tr>
+            <td>
+        <form method="GET" action="" id="concept_term">
+            <label>Term in the vocabularly</label>
+            <input type="text" id="str" name="str" placeholder="Term Vocabularly" value="">
+            <label>Source Vocabularly:</label>
+            <input type="text" id="sab" name="sab" placeholder="Source Vocabularly" value="">
+            <input type="submit" value="Concept" class="btn btn-primary"/>
+        </form>
+            </td>
+            <td>
+                <textarea id="concept_term_results" style="width:350px;height:80px">
+                </textarea>
+            </td>
+        </tr>
+    </table>
+
     <hr>
 
     <h2>Concept: Get full details for a concept</h2>
@@ -141,6 +175,7 @@
             </td>
         </tr>
     </table>
+
     <hr>
 
     <h2>Concept: Get all childrens for a given concept</h2>

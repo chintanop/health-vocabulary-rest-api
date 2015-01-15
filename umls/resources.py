@@ -3,6 +3,7 @@ from umls.models import MRREL
 
 from umls.utils import get_cui
 from umls.utils import get_code
+from django.db.models import Q
 
 class CodeResource:
     """ The Terminology Code resource """
@@ -67,6 +68,24 @@ class ConceptResource:
     def _get(self, cui):
         terms = MRCONSO.objects.filter(CUI=cui)
         rterms = []
+        for term in terms:
+            rterms.append({
+                'concept':term.CUI,
+                'pref_term':term.ISPREF,
+                'terms':term.STR,
+                'sabs':term.SAB,
+            })
+
+        return rterms
+
+    def _get_term(self, str, sab):
+        if sab == 'none':
+            terms = MRCONSO.objects.filter(STR__contains=str)
+        else:
+            sablist = sab.split(',')
+            terms = MRCONSO.objects.filter(STR__contains=str).filter(SAB__in=sablist)
+        rterms = []
+
         for term in terms:
             rterms.append({
                 'concept':term.CUI,
