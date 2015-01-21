@@ -85,11 +85,13 @@ def concept_term_resource_view(request, str, sab):
     sab: Source Vocab
 
     """
+    if sab =='children':
+        rterms =  ConceptResource()._get_children(str)
+    else:
+        rterms =  ConceptResource()._get_term(str, sab)
 
-    rterms =  ConceptResource()._get_term(str, sab)
-    print '111111111'
     #Handle AJAX Requests
-    response = json.dumps(rterms)
+    response = json.dumps(rterms, sort_keys=True)
     if request.GET.has_key("callback"):
           response = request.GET["callback"]+"("+response+")"
 
@@ -105,11 +107,12 @@ def concept_resource_view(request, cui):
     cui: The Concept code.
 
     """
+    print "GET /concept/<cui>"
 
     rterms =  ConceptResource()._get(cui)
 
     #Handle AJAX Requests
-    response = json.dumps(rterms)
+    response = json.dumps(rterms, sort_keys=True)
     if request.GET.has_key("callback"):
           response = request.GET["callback"]+"("+response+")"
 

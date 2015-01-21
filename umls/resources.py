@@ -4,6 +4,8 @@ from umls.models import MRREL
 from umls.utils import get_cui
 from umls.utils import get_code
 from django.db.models import Q
+from django.db import connection
+
 
 class CodeResource:
     """ The Terminology Code resource """
@@ -71,7 +73,6 @@ class ConceptResource:
         for term in terms:
             rterms.append({
                 'concept':term.CUI,
-                'pref_term':term.ISPREF,
                 'terms':term.STR,
                 'sabs':term.SAB,
             })
@@ -89,11 +90,26 @@ class ConceptResource:
         for term in terms:
             rterms.append({
                 'concept':term.CUI,
-                'pref_term':term.ISPREF,
                 'terms':term.STR,
                 'sabs':term.SAB,
             })
 
         return rterms
-        
+
+    def _get_children(self, sab):
+        cursor = connection.cursor()
+        cursor.execute("SELECT rel.cui1 as CUI, rel.sab as SAB, conso.str as STR FROM `MRREL` rel, MRCONSO conso WHERE rel.cui2 = conso.cui AND rel.rel = 'CHD' AND rel.rela = 'ISA' AND STYPE1 = 'SCUI' AND rel.sab = %s GROUP BY rel.cui1, rel.sab, conso.str", [sab])
+        terms = cursor.fetchall()
+        x = cursor.description
+        rterms = []
+
+        for r in terms:
+            i = 0
+            d = {}
+            while i < len(x):
+                d[x[i][0]] = r[i]
+                i = i+1
+            rterms.append(d)
+
+        return rterms
 

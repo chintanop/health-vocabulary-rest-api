@@ -15,8 +15,12 @@ urlpatterns = patterns('',
 
     url(r'^demo', TemplateView.as_view(template_name="demo.html")),
 
+    #Concept Children View
+    #url(r'^concept/(?P<sab>.+)/children/$', 'umls.views.concept_term_resource_view'),
+
     #Concept Term
     url(r'^concept/(?P<str>.+)/(?P<sab>.+)/$', 'umls.views.concept_term_resource_view'),
+
 
     #Concept Resource View
     url(r'^concept/(?P<cui>.+)/$', 'umls.views.concept_resource_view'),

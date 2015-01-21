@@ -52,6 +52,13 @@
                 return false;
             });
 
+            $("#children").submit(function(){
+                $.get("/concept/" + $("#chd_sab").val() + "/children", function (response) {
+                    $("#concept_children_results").val(response);
+                });
+                return false;
+            });
+
         });
         
     </script>
@@ -178,19 +185,19 @@
 
     <hr>
 
-    <h2>Concept: Get all childrens for a given concept</h2>
+    <h2>Concept: Get all childrens for a given Source Vocabularly</h2>
 
     <table class="table">
         <tr>
             <td>
         <form method="GET" action="" id="children">
             <label>Source Vocabularly:</label>
-            <input type="text" id="sab" name="sab" placeholder="Source Vocabularly" value="">
+            <input type="text" id="chd_sab" name="chd_sab" placeholder="Source Vocabularly" value="SNOMEDCT">
             <input type="submit" value="Children" class="btn btn-primary"/>
         </form>
             </td>
             <td>
-                <textarea id="concept_results" style="width:350px;height:80px">
+                <textarea id="concept_children_results" style="width:350px;height:80px">
                 </textarea>
             </td>
         </tr>
