@@ -59,6 +59,20 @@
                 return false;
             });
 
+            $("#parent").submit(function(){
+                $.get("/concept/" + $("#par_sab").val() + "/parent", function (response) {
+                    $("#concept_parent_results").val(response);
+                });
+                return false;
+            });
+
+            $("#synonym").submit(function(){
+                $.get("/concept/" + $("#syn_cui").val() + "/synonym/" + $("#syn_sab").val(), function (response) {
+                    $("#concept_synonym_results").val(response);
+                });
+                return false;
+            });
+
         });
         
     </script>
@@ -198,6 +212,46 @@
             </td>
             <td>
                 <textarea id="concept_children_results" style="width:350px;height:80px">
+                </textarea>
+            </td>
+        </tr>
+    </table>
+    <hr>
+
+    <h2>Concept: Get all parent for a given Source Vocabularly</h2>
+
+    <table class="table">
+        <tr>
+            <td>
+        <form method="GET" action="" id="parent">
+            <label>Source Vocabularly:</label>
+            <input type="text" id="par_sab" name="par_sab" placeholder="Source Vocabularly" value="SNOMEDCT">
+            <input type="submit" value="Parent" class="btn btn-primary"/>
+        </form>
+            </td>
+            <td>
+                <textarea id="concept_parent_results" style="width:350px;height:80px">
+                </textarea>
+            </td>
+        </tr>
+    </table>
+    <hr>
+
+    <h2>Concept: Get all synonym strings for a given Concept.</h2>
+
+    <table class="table">
+        <tr>
+            <td>
+        <form method="GET" action="" id="synonym">
+            <label>Concept:</label>
+            <input type="text" id="syn_cui" name="syn_cui" placeholder="C0000005" value="C0000005">
+            <label>Source Vocabularly:</label>
+            <input type="text" id="syn_sab" name="syn_sab" placeholder="Source Vocabularly" value="MSH">
+            <input type="submit" value="Synonym" class="btn btn-primary"/>
+        </form>
+            </td>
+            <td>
+                <textarea id="concept_synonym_results" style="width:350px;height:80px">
                 </textarea>
             </td>
         </tr>

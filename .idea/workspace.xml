@@ -41,11 +41,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vocabintf/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.56942004" vertical-offset="0" max-vertical-offset="576">
-              <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="612">
+              <caret line="21" column="26" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="26" />
               <folding>
                 <element signature="e#0#51#0" expanded="true" />
               </folding>
@@ -65,11 +65,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="demo.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="demo.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/umls/templates/demo.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.3333333" vertical-offset="594" max-vertical-offset="3852">
-              <caret line="38" column="29" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
+            <state vertical-scroll-proportion="0.55086374" vertical-offset="4123" max-vertical-offset="4824">
+              <caret line="245" column="26" selection-start-line="245" selection-start-column="26" selection-end-line="245" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -78,8 +78,8 @@
       <file leaf-file-name="utils.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/umls/utils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="576">
-              <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="576">
+              <caret line="8" column="52" selection-start-line="8" selection-start-column="48" selection-end-line="8" selection-end-column="52" />
               <folding />
             </state>
           </provider>
@@ -88,8 +88,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/umls/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1226" max-vertical-offset="2250">
-              <caret line="86" column="7" selection-start-line="86" selection-start-column="7" selection-end-line="86" selection-end-column="7" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="2134" max-vertical-offset="2682">
+              <caret line="134" column="48" selection-start-line="134" selection-start-column="45" selection-end-line="134" selection-end-column="48" />
               <folding>
                 <element signature="e#0#36#0" expanded="true" />
               </folding>
@@ -100,27 +100,25 @@
       <file leaf-file-name="resources.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/umls/resources.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1604" max-vertical-offset="2178">
-              <caret line="101" column="33" selection-start-line="101" selection-start-column="33" selection-end-line="101" selection-end-column="33" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="2116" max-vertical-offset="2754">
+              <caret line="129" column="0" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
-                <marker date="1421818904526" expanded="true" signature="2623:2630" placeholder="SELECT foo F..bar..." />
-                <marker date="1421818904526" expanded="true" signature="2623:2711" placeholder="SELECT rel.c..." />
-                <marker date="1421818904526" expanded="true" signature="2623:2738" placeholder="SELECT rel.c..." />
-                <marker date="1421818904526" expanded="true" signature="2623:2752" placeholder="SELECT rel.c..." />
-                <marker date="1421818904526" expanded="true" signature="2623:2757" placeholder="SELECT rel.c..." />
-                <marker date="1421818904526" expanded="true" signature="2623:2773" placeholder="SELECT rel.c..." />
-                <marker date="1421818904526" expanded="true" signature="2623:2792" placeholder="SELECT rel.c..." />
-                <marker date="1421818904526" expanded="true" signature="2623:2798" placeholder="SELECT rel.c..." />
-                <marker date="1421818904526" expanded="true" signature="2623:2813" placeholder="SELECT rel.c..." />
-                <marker date="1421818904526" expanded="true" signature="2623:2814" placeholder="SELECT rel.c..." />
-                <marker date="1421818904526" expanded="true" signature="2623:2814" placeholder="SELECT rel.c..." />
-                <marker date="1421818904526" expanded="true" signature="2623:2814" placeholder="SELECT rel.c..." />
-                <marker date="1421818904526" expanded="true" signature="2623:2854" placeholder="SELECT rel.c..." />
-                <marker date="1421818904526" expanded="true" signature="2623:2863" placeholder="SELECT rel.c..." />
-                <marker date="1421818904526" expanded="true" signature="2623:2897" placeholder="SELECT rel.c..." />
-                <marker date="1421818904526" expanded="true" signature="2623:3150" placeholder="SELECT rel.c..." />
-                <marker date="1421818904526" expanded="true" signature="2897:3150" placeholder="SELECT rel.c..." />
+                <marker date="1421834821328" expanded="true" signature="2623:2630" placeholder="SELECT foo F..bar..." />
+                <marker date="1421834821328" expanded="true" signature="2623:2711" placeholder="SELECT rel.c..." />
+                <marker date="1421834821328" expanded="true" signature="2623:2738" placeholder="SELECT rel.c..." />
+                <marker date="1421834821328" expanded="true" signature="2623:2752" placeholder="SELECT rel.c..." />
+                <marker date="1421834821328" expanded="true" signature="2623:2757" placeholder="SELECT rel.c..." />
+                <marker date="1421834821328" expanded="true" signature="2623:2773" placeholder="SELECT rel.c..." />
+                <marker date="1421834821328" expanded="true" signature="2623:2784" placeholder="SELECT rel.c..." />
+                <marker date="1421834821328" expanded="true" signature="2623:2793" placeholder="SELECT rel.c..." />
+                <marker date="1421834821328" expanded="true" signature="2623:2794" placeholder="SELECT rel.c..." />
+                <marker date="1421834821328" expanded="true" signature="2623:2834" placeholder="SELECT rel.c..." />
+                <marker date="1421834821328" expanded="true" signature="2623:2843" placeholder="SELECT rel.c..." />
+                <marker date="1421834821328" expanded="true" signature="2623:2877" placeholder="SELECT rel.c..." />
+                <marker date="1421834821328" expanded="true" signature="2623:3130" placeholder="SELECT rel.c..." />
+                <marker date="1421834821328" expanded="true" signature="2877:3130" placeholder="SELECT rel.c..." />
+                <marker date="1421834821328" expanded="true" signature="3225:3464" placeholder="SELECT rel.c..." />
               </folding>
             </state>
           </provider>
@@ -141,10 +139,10 @@
       <list>
         <option value="$PROJECT_DIR$/umls/models.py" />
         <option value="$PROJECT_DIR$/vocabintf/settings.py" />
-        <option value="$PROJECT_DIR$/umls/templates/demo.html" />
+        <option value="$PROJECT_DIR$/vocabintf/urls.py" />
         <option value="$PROJECT_DIR$/umls/resources.py" />
         <option value="$PROJECT_DIR$/umls/views.py" />
-        <option value="$PROJECT_DIR$/vocabintf/urls.py" />
+        <option value="$PROJECT_DIR$/umls/templates/demo.html" />
       </list>
     </option>
   </component>
@@ -525,9 +523,9 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33738938" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34623894" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18818565" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19156118" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -614,23 +612,21 @@
           <caret line="80" column="0" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
-            <marker date="1421818904526" expanded="true" signature="2623:2630" placeholder="SELECT foo F..bar..." />
-            <marker date="1421818904526" expanded="true" signature="2623:2711" placeholder="SELECT rel.c..." />
-            <marker date="1421818904526" expanded="true" signature="2623:2738" placeholder="SELECT rel.c..." />
-            <marker date="1421818904526" expanded="true" signature="2623:2752" placeholder="SELECT rel.c..." />
-            <marker date="1421818904526" expanded="true" signature="2623:2757" placeholder="SELECT rel.c..." />
-            <marker date="1421818904526" expanded="true" signature="2623:2773" placeholder="SELECT rel.c..." />
-            <marker date="1421818904526" expanded="true" signature="2623:2792" placeholder="SELECT rel.c..." />
-            <marker date="1421818904526" expanded="true" signature="2623:2798" placeholder="SELECT rel.c..." />
-            <marker date="1421818904526" expanded="true" signature="2623:2813" placeholder="SELECT rel.c..." />
-            <marker date="1421818904526" expanded="true" signature="2623:2814" placeholder="SELECT rel.c..." />
-            <marker date="1421818904526" expanded="true" signature="2623:2814" placeholder="SELECT rel.c..." />
-            <marker date="1421818904526" expanded="true" signature="2623:2814" placeholder="SELECT rel.c..." />
-            <marker date="1421818904526" expanded="true" signature="2623:2854" placeholder="SELECT rel.c..." />
-            <marker date="1421818904526" expanded="true" signature="2623:2863" placeholder="SELECT rel.c..." />
-            <marker date="1421818904526" expanded="true" signature="2623:2897" placeholder="SELECT rel.c..." />
-            <marker date="1421818904526" expanded="true" signature="2623:3150" placeholder="SELECT rel.c..." />
-            <marker date="1421818904526" expanded="true" signature="2897:3150" placeholder="SELECT rel.c..." />
+            <marker date="1421834821328" expanded="true" signature="2623:2630" placeholder="SELECT foo F..bar..." />
+            <marker date="1421834821328" expanded="true" signature="2623:2711" placeholder="SELECT rel.c..." />
+            <marker date="1421834821328" expanded="true" signature="2623:2738" placeholder="SELECT rel.c..." />
+            <marker date="1421834821328" expanded="true" signature="2623:2752" placeholder="SELECT rel.c..." />
+            <marker date="1421834821328" expanded="true" signature="2623:2757" placeholder="SELECT rel.c..." />
+            <marker date="1421834821328" expanded="true" signature="2623:2773" placeholder="SELECT rel.c..." />
+            <marker date="1421834821328" expanded="true" signature="2623:2784" placeholder="SELECT rel.c..." />
+            <marker date="1421834821328" expanded="true" signature="2623:2793" placeholder="SELECT rel.c..." />
+            <marker date="1421834821328" expanded="true" signature="2623:2794" placeholder="SELECT rel.c..." />
+            <marker date="1421834821328" expanded="true" signature="2623:2834" placeholder="SELECT rel.c..." />
+            <marker date="1421834821328" expanded="true" signature="2623:2843" placeholder="SELECT rel.c..." />
+            <marker date="1421834821328" expanded="true" signature="2623:2877" placeholder="SELECT rel.c..." />
+            <marker date="1421834821328" expanded="true" signature="2623:3130" placeholder="SELECT rel.c..." />
+            <marker date="1421834821328" expanded="true" signature="2877:3130" placeholder="SELECT rel.c..." />
+            <marker date="1421834821328" expanded="true" signature="3225:3464" placeholder="SELECT rel.c..." />
           </folding>
         </state>
       </provider>
@@ -685,23 +681,21 @@
           <caret line="67" column="20" selection-start-line="67" selection-start-column="20" selection-end-line="67" selection-end-column="20" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
-            <marker date="1421818904526" expanded="true" signature="2623:2630" placeholder="SELECT foo F..bar..." />
-            <marker date="1421818904526" expanded="true" signature="2623:2711" placeholder="SELECT rel.c..." />
-            <marker date="1421818904526" expanded="true" signature="2623:2738" placeholder="SELECT rel.c..." />
-            <marker date="1421818904526" expanded="true" signature="2623:2752" placeholder="SELECT rel.c..." />
-            <marker date="1421818904526" expanded="true" signature="2623:2757" placeholder="SELECT rel.c..." />
-            <marker date="1421818904526" expanded="true" signature="2623:2773" placeholder="SELECT rel.c..." />
-            <marker date="1421818904526" expanded="true" signature="2623:2792" placeholder="SELECT rel.c..." />
-            <marker date="1421818904526" expanded="true" signature="2623:2798" placeholder="SELECT rel.c..." />
-            <marker date="1421818904526" expanded="true" signature="2623:2813" placeholder="SELECT rel.c..." />
-            <marker date="1421818904526" expanded="true" signature="2623:2814" placeholder="SELECT rel.c..." />
-            <marker date="1421818904526" expanded="true" signature="2623:2814" placeholder="SELECT rel.c..." />
-            <marker date="1421818904526" expanded="true" signature="2623:2814" placeholder="SELECT rel.c..." />
-            <marker date="1421818904526" expanded="true" signature="2623:2854" placeholder="SELECT rel.c..." />
-            <marker date="1421818904526" expanded="true" signature="2623:2863" placeholder="SELECT rel.c..." />
-            <marker date="1421818904526" expanded="true" signature="2623:2897" placeholder="SELECT rel.c..." />
-            <marker date="1421818904526" expanded="true" signature="2623:3150" placeholder="SELECT rel.c..." />
-            <marker date="1421818904526" expanded="true" signature="2897:3150" placeholder="SELECT rel.c..." />
+            <marker date="1421834821328" expanded="true" signature="2623:2630" placeholder="SELECT foo F..bar..." />
+            <marker date="1421834821328" expanded="true" signature="2623:2711" placeholder="SELECT rel.c..." />
+            <marker date="1421834821328" expanded="true" signature="2623:2738" placeholder="SELECT rel.c..." />
+            <marker date="1421834821328" expanded="true" signature="2623:2752" placeholder="SELECT rel.c..." />
+            <marker date="1421834821328" expanded="true" signature="2623:2757" placeholder="SELECT rel.c..." />
+            <marker date="1421834821328" expanded="true" signature="2623:2773" placeholder="SELECT rel.c..." />
+            <marker date="1421834821328" expanded="true" signature="2623:2784" placeholder="SELECT rel.c..." />
+            <marker date="1421834821328" expanded="true" signature="2623:2793" placeholder="SELECT rel.c..." />
+            <marker date="1421834821328" expanded="true" signature="2623:2794" placeholder="SELECT rel.c..." />
+            <marker date="1421834821328" expanded="true" signature="2623:2834" placeholder="SELECT rel.c..." />
+            <marker date="1421834821328" expanded="true" signature="2623:2843" placeholder="SELECT rel.c..." />
+            <marker date="1421834821328" expanded="true" signature="2623:2877" placeholder="SELECT rel.c..." />
+            <marker date="1421834821328" expanded="true" signature="2623:3130" placeholder="SELECT rel.c..." />
+            <marker date="1421834821328" expanded="true" signature="2877:3130" placeholder="SELECT rel.c..." />
+            <marker date="1421834821328" expanded="true" signature="3225:3464" placeholder="SELECT rel.c..." />
           </folding>
         </state>
       </provider>
@@ -765,23 +759,21 @@
           <caret line="67" column="20" selection-start-line="67" selection-start-column="20" selection-end-line="67" selection-end-column="20" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
-            <marker date="1421818904526" expanded="true" signature="2623:2630" placeholder="SELECT foo F..bar..." />
-            <marker date="1421818904526" expanded="true" signature="2623:2711" placeholder="SELECT rel.c..." />
-            <marker date="1421818904526" expanded="true" signature="2623:2738" placeholder="SELECT rel.c..." />
-            <marker date="1421818904526" expanded="true" signature="2623:2752" placeholder="SELECT rel.c..." />
-            <marker date="1421818904526" expanded="true" signature="2623:2757" placeholder="SELECT rel.c..." />
-            <marker date="1421818904526" expanded="true" signature="2623:2773" placeholder="SELECT rel.c..." />
-            <marker date="1421818904526" expanded="true" signature="2623:2792" placeholder="SELECT rel.c..." />
-            <marker date="1421818904526" expanded="true" signature="2623:2798" placeholder="SELECT rel.c..." />
-            <marker date="1421818904526" expanded="true" signature="2623:2813" placeholder="SELECT rel.c..." />
-            <marker date="1421818904526" expanded="true" signature="2623:2814" placeholder="SELECT rel.c..." />
-            <marker date="1421818904526" expanded="true" signature="2623:2814" placeholder="SELECT rel.c..." />
-            <marker date="1421818904526" expanded="true" signature="2623:2814" placeholder="SELECT rel.c..." />
-            <marker date="1421818904526" expanded="true" signature="2623:2854" placeholder="SELECT rel.c..." />
-            <marker date="1421818904526" expanded="true" signature="2623:2863" placeholder="SELECT rel.c..." />
-            <marker date="1421818904526" expanded="true" signature="2623:2897" placeholder="SELECT rel.c..." />
-            <marker date="1421818904526" expanded="true" signature="2623:3150" placeholder="SELECT rel.c..." />
-            <marker date="1421818904526" expanded="true" signature="2897:3150" placeholder="SELECT rel.c..." />
+            <marker date="1421834821328" expanded="true" signature="2623:2630" placeholder="SELECT foo F..bar..." />
+            <marker date="1421834821328" expanded="true" signature="2623:2711" placeholder="SELECT rel.c..." />
+            <marker date="1421834821328" expanded="true" signature="2623:2738" placeholder="SELECT rel.c..." />
+            <marker date="1421834821328" expanded="true" signature="2623:2752" placeholder="SELECT rel.c..." />
+            <marker date="1421834821328" expanded="true" signature="2623:2757" placeholder="SELECT rel.c..." />
+            <marker date="1421834821328" expanded="true" signature="2623:2773" placeholder="SELECT rel.c..." />
+            <marker date="1421834821328" expanded="true" signature="2623:2784" placeholder="SELECT rel.c..." />
+            <marker date="1421834821328" expanded="true" signature="2623:2793" placeholder="SELECT rel.c..." />
+            <marker date="1421834821328" expanded="true" signature="2623:2794" placeholder="SELECT rel.c..." />
+            <marker date="1421834821328" expanded="true" signature="2623:2834" placeholder="SELECT rel.c..." />
+            <marker date="1421834821328" expanded="true" signature="2623:2843" placeholder="SELECT rel.c..." />
+            <marker date="1421834821328" expanded="true" signature="2623:2877" placeholder="SELECT rel.c..." />
+            <marker date="1421834821328" expanded="true" signature="2623:3130" placeholder="SELECT rel.c..." />
+            <marker date="1421834821328" expanded="true" signature="2877:3130" placeholder="SELECT rel.c..." />
+            <marker date="1421834821328" expanded="true" signature="3225:3464" placeholder="SELECT rel.c..." />
           </folding>
         </state>
       </provider>
@@ -845,23 +837,21 @@
           <caret line="67" column="20" selection-start-line="67" selection-start-column="20" selection-end-line="67" selection-end-column="20" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
-            <marker date="1421818904526" expanded="true" signature="2623:2630" placeholder="SELECT foo F..bar..." />
-            <marker date="1421818904526" expanded="true" signature="2623:2711" placeholder="SELECT rel.c..." />
-            <marker date="1421818904526" expanded="true" signature="2623:2738" placeholder="SELECT rel.c..." />
-            <marker date="1421818904526" expanded="true" signature="2623:2752" placeholder="SELECT rel.c..." />
-            <marker date="1421818904526" expanded="true" signature="2623:2757" placeholder="SELECT rel.c..." />
-            <marker date="1421818904526" expanded="true" signature="2623:2773" placeholder="SELECT rel.c..." />
-            <marker date="1421818904526" expanded="true" signature="2623:2792" placeholder="SELECT rel.c..." />
-            <marker date="1421818904526" expanded="true" signature="2623:2798" placeholder="SELECT rel.c..." />
-            <marker date="1421818904526" expanded="true" signature="2623:2813" placeholder="SELECT rel.c..." />
-            <marker date="1421818904526" expanded="true" signature="2623:2814" placeholder="SELECT rel.c..." />
-            <marker date="1421818904526" expanded="true" signature="2623:2814" placeholder="SELECT rel.c..." />
-            <marker date="1421818904526" expanded="true" signature="2623:2814" placeholder="SELECT rel.c..." />
-            <marker date="1421818904526" expanded="true" signature="2623:2854" placeholder="SELECT rel.c..." />
-            <marker date="1421818904526" expanded="true" signature="2623:2863" placeholder="SELECT rel.c..." />
-            <marker date="1421818904526" expanded="true" signature="2623:2897" placeholder="SELECT rel.c..." />
-            <marker date="1421818904526" expanded="true" signature="2623:3150" placeholder="SELECT rel.c..." />
-            <marker date="1421818904526" expanded="true" signature="2897:3150" placeholder="SELECT rel.c..." />
+            <marker date="1421834821328" expanded="true" signature="2623:2630" placeholder="SELECT foo F..bar..." />
+            <marker date="1421834821328" expanded="true" signature="2623:2711" placeholder="SELECT rel.c..." />
+            <marker date="1421834821328" expanded="true" signature="2623:2738" placeholder="SELECT rel.c..." />
+            <marker date="1421834821328" expanded="true" signature="2623:2752" placeholder="SELECT rel.c..." />
+            <marker date="1421834821328" expanded="true" signature="2623:2757" placeholder="SELECT rel.c..." />
+            <marker date="1421834821328" expanded="true" signature="2623:2773" placeholder="SELECT rel.c..." />
+            <marker date="1421834821328" expanded="true" signature="2623:2784" placeholder="SELECT rel.c..." />
+            <marker date="1421834821328" expanded="true" signature="2623:2793" placeholder="SELECT rel.c..." />
+            <marker date="1421834821328" expanded="true" signature="2623:2794" placeholder="SELECT rel.c..." />
+            <marker date="1421834821328" expanded="true" signature="2623:2834" placeholder="SELECT rel.c..." />
+            <marker date="1421834821328" expanded="true" signature="2623:2843" placeholder="SELECT rel.c..." />
+            <marker date="1421834821328" expanded="true" signature="2623:2877" placeholder="SELECT rel.c..." />
+            <marker date="1421834821328" expanded="true" signature="2623:3130" placeholder="SELECT rel.c..." />
+            <marker date="1421834821328" expanded="true" signature="2877:3130" placeholder="SELECT rel.c..." />
+            <marker date="1421834821328" expanded="true" signature="3225:3464" placeholder="SELECT rel.c..." />
           </folding>
         </state>
       </provider>
@@ -925,23 +915,21 @@
           <caret line="67" column="20" selection-start-line="67" selection-start-column="20" selection-end-line="67" selection-end-column="20" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
-            <marker date="1421818904526" expanded="true" signature="2623:2630" placeholder="SELECT foo F..bar..." />
-            <marker date="1421818904526" expanded="true" signature="2623:2711" placeholder="SELECT rel.c..." />
-            <marker date="1421818904526" expanded="true" signature="2623:2738" placeholder="SELECT rel.c..." />
-            <marker date="1421818904526" expanded="true" signature="2623:2752" placeholder="SELECT rel.c..." />
-            <marker date="1421818904526" expanded="true" signature="2623:2757" placeholder="SELECT rel.c..." />
-            <marker date="1421818904526" expanded="true" signature="2623:2773" placeholder="SELECT rel.c..." />
-            <marker date="1421818904526" expanded="true" signature="2623:2792" placeholder="SELECT rel.c..." />
-            <marker date="1421818904526" expanded="true" signature="2623:2798" placeholder="SELECT rel.c..." />
-            <marker date="1421818904526" expanded="true" signature="2623:2813" placeholder="SELECT rel.c..." />
-            <marker date="1421818904526" expanded="true" signature="2623:2814" placeholder="SELECT rel.c..." />
-            <marker date="1421818904526" expanded="true" signature="2623:2814" placeholder="SELECT rel.c..." />
-            <marker date="1421818904526" expanded="true" signature="2623:2814" placeholder="SELECT rel.c..." />
-            <marker date="1421818904526" expanded="true" signature="2623:2854" placeholder="SELECT rel.c..." />
-            <marker date="1421818904526" expanded="true" signature="2623:2863" placeholder="SELECT rel.c..." />
-            <marker date="1421818904526" expanded="true" signature="2623:2897" placeholder="SELECT rel.c..." />
-            <marker date="1421818904526" expanded="true" signature="2623:3150" placeholder="SELECT rel.c..." />
-            <marker date="1421818904526" expanded="true" signature="2897:3150" placeholder="SELECT rel.c..." />
+            <marker date="1421834821328" expanded="true" signature="2623:2630" placeholder="SELECT foo F..bar..." />
+            <marker date="1421834821328" expanded="true" signature="2623:2711" placeholder="SELECT rel.c..." />
+            <marker date="1421834821328" expanded="true" signature="2623:2738" placeholder="SELECT rel.c..." />
+            <marker date="1421834821328" expanded="true" signature="2623:2752" placeholder="SELECT rel.c..." />
+            <marker date="1421834821328" expanded="true" signature="2623:2757" placeholder="SELECT rel.c..." />
+            <marker date="1421834821328" expanded="true" signature="2623:2773" placeholder="SELECT rel.c..." />
+            <marker date="1421834821328" expanded="true" signature="2623:2784" placeholder="SELECT rel.c..." />
+            <marker date="1421834821328" expanded="true" signature="2623:2793" placeholder="SELECT rel.c..." />
+            <marker date="1421834821328" expanded="true" signature="2623:2794" placeholder="SELECT rel.c..." />
+            <marker date="1421834821328" expanded="true" signature="2623:2834" placeholder="SELECT rel.c..." />
+            <marker date="1421834821328" expanded="true" signature="2623:2843" placeholder="SELECT rel.c..." />
+            <marker date="1421834821328" expanded="true" signature="2623:2877" placeholder="SELECT rel.c..." />
+            <marker date="1421834821328" expanded="true" signature="2623:3130" placeholder="SELECT rel.c..." />
+            <marker date="1421834821328" expanded="true" signature="2877:3130" placeholder="SELECT rel.c..." />
+            <marker date="1421834821328" expanded="true" signature="3225:3464" placeholder="SELECT rel.c..." />
           </folding>
         </state>
       </provider>
@@ -1044,57 +1032,46 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6168717" vertical-offset="7875" max-vertical-offset="9828">
           <caret line="458" column="27" selection-start-line="458" selection-start-column="19" selection-end-line="458" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/umls/utils.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="576">
-          <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
+          <caret line="8" column="52" selection-start-line="8" selection-start-column="48" selection-end-line="8" selection-end-column="52" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/umls/resources.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1604" max-vertical-offset="2178">
-          <caret line="101" column="33" selection-start-line="101" selection-start-column="33" selection-end-line="101" selection-end-column="33" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="2116" max-vertical-offset="2754">
+          <caret line="129" column="0" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
-            <marker date="1421818904526" expanded="true" signature="2623:2630" placeholder="SELECT foo F..bar..." />
-            <marker date="1421818904526" expanded="true" signature="2623:2711" placeholder="SELECT rel.c..." />
-            <marker date="1421818904526" expanded="true" signature="2623:2738" placeholder="SELECT rel.c..." />
-            <marker date="1421818904526" expanded="true" signature="2623:2752" placeholder="SELECT rel.c..." />
-            <marker date="1421818904526" expanded="true" signature="2623:2757" placeholder="SELECT rel.c..." />
-            <marker date="1421818904526" expanded="true" signature="2623:2773" placeholder="SELECT rel.c..." />
-            <marker date="1421818904526" expanded="true" signature="2623:2792" placeholder="SELECT rel.c..." />
-            <marker date="1421818904526" expanded="true" signature="2623:2798" placeholder="SELECT rel.c..." />
-            <marker date="1421818904526" expanded="true" signature="2623:2813" placeholder="SELECT rel.c..." />
-            <marker date="1421818904526" expanded="true" signature="2623:2814" placeholder="SELECT rel.c..." />
-            <marker date="1421818904526" expanded="true" signature="2623:2814" placeholder="SELECT rel.c..." />
-            <marker date="1421818904526" expanded="true" signature="2623:2814" placeholder="SELECT rel.c..." />
-            <marker date="1421818904526" expanded="true" signature="2623:2854" placeholder="SELECT rel.c..." />
-            <marker date="1421818904526" expanded="true" signature="2623:2863" placeholder="SELECT rel.c..." />
-            <marker date="1421818904526" expanded="true" signature="2623:2897" placeholder="SELECT rel.c..." />
-            <marker date="1421818904526" expanded="true" signature="2623:3150" placeholder="SELECT rel.c..." />
-            <marker date="1421818904526" expanded="true" signature="2897:3150" placeholder="SELECT rel.c..." />
+            <marker date="1421834821328" expanded="true" signature="2623:2630" placeholder="SELECT foo F..bar..." />
+            <marker date="1421834821328" expanded="true" signature="2623:2711" placeholder="SELECT rel.c..." />
+            <marker date="1421834821328" expanded="true" signature="2623:2738" placeholder="SELECT rel.c..." />
+            <marker date="1421834821328" expanded="true" signature="2623:2752" placeholder="SELECT rel.c..." />
+            <marker date="1421834821328" expanded="true" signature="2623:2757" placeholder="SELECT rel.c..." />
+            <marker date="1421834821328" expanded="true" signature="2623:2773" placeholder="SELECT rel.c..." />
+            <marker date="1421834821328" expanded="true" signature="2623:2784" placeholder="SELECT rel.c..." />
+            <marker date="1421834821328" expanded="true" signature="2623:2793" placeholder="SELECT rel.c..." />
+            <marker date="1421834821328" expanded="true" signature="2623:2794" placeholder="SELECT rel.c..." />
+            <marker date="1421834821328" expanded="true" signature="2623:2834" placeholder="SELECT rel.c..." />
+            <marker date="1421834821328" expanded="true" signature="2623:2843" placeholder="SELECT rel.c..." />
+            <marker date="1421834821328" expanded="true" signature="2623:2877" placeholder="SELECT rel.c..." />
+            <marker date="1421834821328" expanded="true" signature="2623:3130" placeholder="SELECT rel.c..." />
+            <marker date="1421834821328" expanded="true" signature="2877:3130" placeholder="SELECT rel.c..." />
+            <marker date="1421834821328" expanded="true" signature="3225:3464" placeholder="SELECT rel.c..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/umls/templates/demo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.3333333" vertical-offset="594" max-vertical-offset="3852">
-          <caret line="38" column="29" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/umls/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1226" max-vertical-offset="2250">
-          <caret line="86" column="7" selection-start-line="86" selection-start-column="7" selection-end-line="86" selection-end-column="7" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="2134" max-vertical-offset="2682">
+          <caret line="134" column="48" selection-start-line="134" selection-start-column="45" selection-end-line="134" selection-end-column="48" />
           <folding>
             <element signature="e#0#36#0" expanded="true" />
           </folding>
@@ -1103,11 +1080,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/vocabintf/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.56942004" vertical-offset="0" max-vertical-offset="576">
-          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="612">
+          <caret line="21" column="26" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="26" />
           <folding>
             <element signature="e#0#51#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/umls/templates/demo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.55086374" vertical-offset="4123" max-vertical-offset="4824">
+          <caret line="245" column="26" selection-start-line="245" selection-start-column="26" selection-end-line="245" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -87,6 +87,8 @@ def concept_term_resource_view(request, str, sab):
     """
     if sab =='children':
         rterms =  ConceptResource()._get_children(str)
+    elif sab =='parent':
+        rterms =  ConceptResource()._get_parent(str)
     else:
         rterms =  ConceptResource()._get_term(str, sab)
 
@@ -110,6 +112,28 @@ def concept_resource_view(request, cui):
     print "GET /concept/<cui>"
 
     rterms =  ConceptResource()._get(cui)
+
+    #Handle AJAX Requests
+    response = json.dumps(rterms, sort_keys=True)
+    if request.GET.has_key("callback"):
+          response = request.GET["callback"]+"("+response+")"
+
+    return HttpResponse(response)
+
+def concept_synonym_resource_view(request, sab, cui):
+    """Get the full display name of a code for a given concept
+
+    GET /concept/<str>/<sab>
+
+    Parameters:
+
+    str: Term
+    sab: Source Vocab
+
+    """
+    print 'synonym'
+    rterms =  ConceptResource()._get_synonym(sab, cui)
+
 
     #Handle AJAX Requests
     response = json.dumps(rterms, sort_keys=True)

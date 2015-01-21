@@ -98,7 +98,7 @@ class ConceptResource:
 
     def _get_children(self, sab):
         cursor = connection.cursor()
-        cursor.execute("SELECT rel.cui1 as CUI, rel.sab as SAB, conso.str as STR FROM `MRREL` rel, MRCONSO conso WHERE rel.cui2 = conso.cui AND rel.rel = 'CHD' AND rel.rela = 'ISA' AND STYPE1 = 'SCUI' AND rel.sab = %s GROUP BY rel.cui1, rel.sab, conso.str", [sab])
+        cursor.execute("SELECT rel.cui1 as CUI, rel.sab as SAB, conso.str as STR FROM `MRREL` rel, MRCONSO conso WHERE rel.cui2 = conso.cui AND rel.rel = 'CHD' AND rel.rela = 'ISA' AND rel.sab = %s GROUP BY rel.cui1, rel.sab, conso.str", [sab])
         terms = cursor.fetchall()
         x = cursor.description
         rterms = []
@@ -111,5 +111,37 @@ class ConceptResource:
                 i = i+1
             rterms.append(d)
 
+        return rterms
+
+    def _get_parent(self, sab):
+        cursor = connection.cursor()
+        cursor.execute("SELECT rel.cui1 as CUI, rel.sab as SAB, conso.str as STR FROM `MRREL` rel, MRCONSO conso WHERE rel.cui2 = conso.cui AND rel.rel = 'PAR' AND rel.rela = 'inverse_isa' AND STYPE1 = 'SCUI' AND rel.sab = %s GROUP BY rel.cui1, rel.sab, conso.str", [sab])
+        terms = cursor.fetchall()
+        x = cursor.description
+        rterms = []
+
+        for r in terms:
+            i = 0
+            d = {}
+            while i < len(x):
+                d[x[i][0]] = r[i]
+                i = i+1
+            rterms.append(d)
+
+        return rterms
+
+    def _get_synonym(self, sab, cui):
+        print 'syyyyyy'
+        sablist = sab.split(',')
+        print sablist
+        print cui
+        terms = MRCONSO.objects.filter(CUI=cui).filter(SAB__in=sablist)
+        rterms = []
+        print 'sssssssss'
+        for term in terms:
+            rterms.append({
+                'terms':term.STR,
+            })
+        print '11111111'
         return rterms
 

@@ -19,8 +19,10 @@ urlpatterns = patterns('',
     #url(r'^concept/(?P<sab>.+)/children/$', 'umls.views.concept_term_resource_view'),
 
     #Concept Term
-    url(r'^concept/(?P<str>.+)/(?P<sab>.+)/$', 'umls.views.concept_term_resource_view'),
+    url(r'^concept/(?P<cui>.+)/synonym/(?P<sab>.+)/$', 'umls.views.concept_synonym_resource_view'),
 
+    #Concept Term
+    url(r'^concept/(?P<str>.+)/(?P<sab>.+)/$', 'umls.views.concept_term_resource_view'),
 
     #Concept Resource View
     url(r'^concept/(?P<cui>.+)/$', 'umls.views.concept_resource_view'),
