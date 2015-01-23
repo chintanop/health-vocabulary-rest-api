@@ -16,14 +16,21 @@ urlpatterns = patterns('',
     url(r'^demo', TemplateView.as_view(template_name="demo.html")),
 
     #Concept Children View
-    #url(r'^concept/(?P<sab>.+)/children/$', 'umls.views.concept_term_resource_view'),
+    url(r'^concepts/(?P<cui>.+)/children$', 'umls.views.concept_child_resource_view'),
+
+    #Concept Parent View
+    url(r'^concepts/(?P<cui>.+)/parent', 'umls.views.concept_par_resource_view'),
+
+    #Concept Parent View
+    url(r'^concepts/(?P<cui>.+)/synonyms', 'umls.views.concept_synonyms_resource_view'),
 
     #Concept Term
-    url(r'^concept/(?P<cui>.+)/synonym/(?P<sab>.+)/$', 'umls.views.concept_synonym_resource_view'),
+    #url(r'^concepts/(?P<cui>.+)/synonym/(?P<sab>.+)/$', 'umls.views.concept_synonym_resource_view'),
+    url(r'^concepts$', 'umls.views.concept_term_resource_view'),
 
     #Concept Term
     url(r'^concept/(?P<str>.+)/(?P<sab>.+)/$', 'umls.views.concept_term_resource_view'),
 
     #Concept Resource View
-    url(r'^concept/(?P<cui>.+)/$', 'umls.views.concept_resource_view'),
+    url(r'^concepts/(?P<cui>.+)/$', 'umls.views.concept_resource_view'),
 )

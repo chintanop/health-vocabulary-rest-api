@@ -80,11 +80,20 @@ class ConceptResource:
         return rterms
 
     def _get_term(self, str, sab):
-        if sab == 'none':
-            terms = MRCONSO.objects.filter(STR__contains=str)
-        else:
+
+        if sab:
             sablist = sab.split(',')
+            print sab
+            print 'sablist' + sab
             terms = MRCONSO.objects.filter(STR__contains=str).filter(SAB__in=sablist)
+        else:
+            terms = MRCONSO.objects.filter(STR__contains=str)
+
+        #if sab == 'none':
+        #    terms = MRCONSO.objects.filter(STR__contains=str)
+        #else:
+        #    sablist = sab.split(',')
+        #    terms = MRCONSO.objects.filter(STR__contains=str).filter(SAB__in=sablist)
         rterms = []
 
         for term in terms:
@@ -96,46 +105,55 @@ class ConceptResource:
 
         return rterms
 
-    def _get_children(self, sab):
+    def _get_children(self, cui, sab):
         cursor = connection.cursor()
-        cursor.execute("SELECT rel.cui1 as CUI, rel.sab as SAB, conso.str as STR FROM `MRREL` rel, MRCONSO conso WHERE rel.cui2 = conso.cui AND rel.rel = 'CHD' AND rel.rela = 'ISA' AND rel.sab = %s GROUP BY rel.cui1, rel.sab, conso.str", [sab])
+        if sab:
+            cursor.execute("SELECT rel.cui1 as CUI, rel.sab as SAB, conso.str as STR FROM `MRREL` rel, MRCONSO conso WHERE rel.cui2 = conso.cui AND rel.rel = 'CHD' AND rel.rela = 'ISA' AND rel.sab = %s AND rel.cui1 = %s GROUP BY rel.cui1, rel.sab, conso.str", [sab, cui])
+        else:
+            cursor.execute("SELECT rel.cui1 as CUI, rel.sab as SAB, conso.str as STR FROM `MRREL` rel, MRCONSO conso WHERE rel.cui2 = conso.cui AND rel.rel = 'CHD' AND rel.rela = 'ISA' AND rel.cui1 = %s GROUP BY rel.cui1, rel.sab, conso.str", [cui])
         terms = cursor.fetchall()
-        x = cursor.description
+        field = cursor.description
         rterms = []
 
-        for r in terms:
+        for row in terms:
             i = 0
-            d = {}
-            while i < len(x):
-                d[x[i][0]] = r[i]
+            record = {}
+            while i < len(field):
+                record[field[i][0]] = row[i]
                 i = i+1
-            rterms.append(d)
+            rterms.append(record)
 
         return rterms
 
-    def _get_parent(self, sab):
+    def _get_parent(self, cui, sab):
         cursor = connection.cursor()
-        cursor.execute("SELECT rel.cui1 as CUI, rel.sab as SAB, conso.str as STR FROM `MRREL` rel, MRCONSO conso WHERE rel.cui2 = conso.cui AND rel.rel = 'PAR' AND rel.rela = 'inverse_isa' AND STYPE1 = 'SCUI' AND rel.sab = %s GROUP BY rel.cui1, rel.sab, conso.str", [sab])
+        if sab:
+            cursor.execute("SELECT rel.cui1 as CUI, rel.sab as SAB, conso.str as STR FROM `MRREL` rel, MRCONSO conso WHERE rel.cui2 = conso.cui AND rel.rel = 'PAR' AND rel.rela = 'inverse_isa' AND rel.sab = %s AND rel.cui1 = %s GROUP BY rel.cui1, rel.sab, conso.str", [sab, cui])
+        else:
+            cursor.execute("SELECT rel.cui1 as CUI, rel.sab as SAB, conso.str as STR FROM `MRREL` rel, MRCONSO conso WHERE rel.cui2 = conso.cui AND rel.rel = 'PAR' AND rel.rela = 'inverse_isa' AND rel.cui1 = %s GROUP BY rel.cui1, rel.sab, conso.str", [cui])
         terms = cursor.fetchall()
-        x = cursor.description
+        field = cursor.description
         rterms = []
 
-        for r in terms:
+        for row in terms:
             i = 0
-            d = {}
-            while i < len(x):
-                d[x[i][0]] = r[i]
+            record = {}
+            while i < len(field):
+                record[field[i][0]] = row[i]
                 i = i+1
-            rterms.append(d)
+            rterms.append(record)
 
         return rterms
 
-    def _get_synonym(self, sab, cui):
+    def _get_synonyms(self, cui, sab):
         print 'syyyyyy'
-        sablist = sab.split(',')
-        print sablist
         print cui
-        terms = MRCONSO.objects.filter(CUI=cui).filter(SAB__in=sablist)
+        if sab:
+            sablist = sab.split(',')
+            print sablist
+            terms = MRCONSO.objects.filter(CUI=cui).filter(SAB__in=sablist)
+        else:
+            terms = MRCONSO.objects.filter(CUI=cui)
         rterms = []
         print 'sssssssss'
         for term in terms:

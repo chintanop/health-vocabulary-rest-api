@@ -33,41 +33,35 @@
             });
 
             $("#concept").submit(function(){
-                $.get("/concept/"+$("#cui").val(),function(response){
+                $.get("/concepts/"+$("#cui").val(),function(response){
                     $("#concept_results").val(response);
                 });
                 return false;
             });
 
             $("#concept_term").submit(function(){
-                if ($("#sab").val()=="") {
-                    $.get("/concept/" + $("#str").val() + "/none", function (response) {
-                        $("#concept_term_results").val(response);
-                    });
-                }else{
-                    $.get("/concept/"+$("#str").val()+"/"+$("#sab").val(),function(response){
-                        $("#concept_term_results").val(response);
-                    });
-                }
+                $.get("/concepts?term="+$("#str").val()+"&sabs="+$("#sab").val(),function(response){
+                    $("#concept_term_results").val(response);
+                });
                 return false;
             });
 
             $("#children").submit(function(){
-                $.get("/concept/" + $("#chd_sab").val() + "/children", function (response) {
+                $.get("/concepts/" + $("#chd_cui").val() + "/children?sab=" + $("#chd_sab").val(), function (response) {
                     $("#concept_children_results").val(response);
                 });
                 return false;
             });
 
             $("#parent").submit(function(){
-                $.get("/concept/" + $("#par_sab").val() + "/parent", function (response) {
+                $.get("/concepts/" + $("#par_cui").val() + "/parent?sab=" + $("#par_sab").val(), function (response) {
                     $("#concept_parent_results").val(response);
                 });
                 return false;
             });
 
             $("#synonym").submit(function(){
-                $.get("/concept/" + $("#syn_cui").val() + "/synonym/" + $("#syn_sab").val(), function (response) {
+                $.get("/concepts/" + $("#syn_cui").val() + "/synonyms?sab=" + $("#syn_sab").val(), function (response) {
                     $("#concept_synonym_results").val(response);
                 });
                 return false;
@@ -82,7 +76,7 @@
     <h1> Health Vocabulary REST API - Demo</h1> 
 
     <hr>
-
+<!--
     <h2>Lookup Vocabulary Code</h2>
 
     <table class="table">
@@ -156,7 +150,7 @@
             </td>
         </tr>
     </table>
-
+-->
     <h2>Concept: Search concepts by term and source terminology (SAB)</h2>
 
     <table class="table">
@@ -205,6 +199,8 @@
         <tr>
             <td>
         <form method="GET" action="" id="children">
+            <label>Concept:</label>
+            <input type="text" id="chd_cui" name="chd_cui" placeholder="Concept" value="C0021364">
             <label>Source Vocabularly:</label>
             <input type="text" id="chd_sab" name="chd_sab" placeholder="Source Vocabularly" value="SNOMEDCT">
             <input type="submit" value="Children" class="btn btn-primary"/>
@@ -224,6 +220,8 @@
         <tr>
             <td>
         <form method="GET" action="" id="parent">
+            <label>Concept:</label>
+            <input type="text" id="par_cui" name="par_cui" placeholder="Concept" value="C0021364">
             <label>Source Vocabularly:</label>
             <input type="text" id="par_sab" name="par_sab" placeholder="Source Vocabularly" value="SNOMEDCT">
             <input type="submit" value="Parent" class="btn btn-primary"/>

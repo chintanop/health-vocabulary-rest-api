@@ -74,7 +74,7 @@ def map_resource_view(request, source_vocab, code_val, target_vocab):
 
     return HttpResponse(response)
 
-def concept_term_resource_view(request, str, sab):
+def concept_child_resource_view1(request, str, sab):
     """Get the full display name of a code for a given concept
 
     GET /concept/<str>/<sab>
@@ -120,10 +120,10 @@ def concept_resource_view(request, cui):
 
     return HttpResponse(response)
 
-def concept_synonym_resource_view(request, sab, cui):
+def concept_term_resource_view(request):
     """Get the full display name of a code for a given concept
 
-    GET /concept/<str>/<sab>
+    GET /concepts?term=term&sabs=sabs
 
     Parameters:
 
@@ -131,8 +131,92 @@ def concept_synonym_resource_view(request, sab, cui):
     sab: Source Vocab
 
     """
-    print 'synonym'
-    rterms =  ConceptResource()._get_synonym(sab, cui)
+    print 'term'
+    term = None
+    sab = None
+    if request.GET['term']:
+        term = request.GET['term']
+        print request.GET['term']
+    if request.GET['sabs']:
+        sab = request.GET['sabs']
+        print request.GET['sabs']
+    rterms =  ConceptResource()._get_term(term, sab)
+
+
+    #Handle AJAX Requests
+    response = json.dumps(rterms, sort_keys=True)
+    if request.GET.has_key("callback"):
+          response = request.GET["callback"]+"("+response+")"
+
+    return HttpResponse(response)
+
+def concept_child_resource_view(request, cui):
+    """Get the full display name of a code for a given concept-children
+
+    GET /concepts/<cui>/children
+
+    Parameters:
+
+    cui: cui
+    sab: Source Vocab
+
+    """
+    print 'child11111'
+    sab = request.GET.get('sab')
+    print sab
+    #if sab:
+    #    print request.GET['chd_sab']
+    rterms =  ConceptResource()._get_children(cui, sab)
+
+
+    #Handle AJAX Requests
+    response = json.dumps(rterms, sort_keys=True)
+    if request.GET.has_key("callback"):
+          response = request.GET["callback"]+"("+response+")"
+
+    return HttpResponse(response)
+
+def concept_par_resource_view(request, cui):
+    """Get the full display name of a code for a given concept-parent
+
+    GET /concepts/<cui>/parent
+
+    Parameters:
+
+    cui: cui
+    sab: Source Vocab
+
+    """
+    print 'par11111'
+    sab = request.GET.get('sab')
+    print sab
+    #if sab:
+    #    print request.GET['chd_sab']
+    rterms =  ConceptResource()._get_parent(cui, sab)
+
+
+    #Handle AJAX Requests
+    response = json.dumps(rterms, sort_keys=True)
+    if request.GET.has_key("callback"):
+          response = request.GET["callback"]+"("+response+")"
+
+    return HttpResponse(response)
+
+def concept_synonyms_resource_view(request, cui):
+    """Get the full display name of a code for a given concept-synonyms
+
+    GET /concepts/<cui>/synonyms
+
+    Parameters:
+
+    cui: cui
+    sab: Source Vocab
+
+    """
+    print 'synonyms'
+    sab = request.GET.get('sab')
+    print sab
+    rterms =  ConceptResource()._get_synonyms(cui, sab)
 
 
     #Handle AJAX Requests
