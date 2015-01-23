@@ -24,6 +24,28 @@ class CodeResource:
 
         return rterms
 
+    def _get_code(self, code, sab):
+
+        if sab:
+            sablist = sab.split(',')
+            print sab
+            print 'sablist' + sab
+            terms = MRCONSO.objects.filter(CODE=code).filter(SAB__in=sablist)
+        else:
+            terms = MRCONSO.objects.filter(CODE=code)
+
+        rterms = []
+
+        for term in terms:
+            rterms.append({
+                'code':term.CODE,
+                'sab':term.SAB,
+                'cuis':term.CUI,
+                'str':term.STR,
+            })
+
+        return rterms
+
 
 class RelResource:
     """ The Terminology Relationship resource """
@@ -89,11 +111,6 @@ class ConceptResource:
         else:
             terms = MRCONSO.objects.filter(STR__contains=str)
 
-        #if sab == 'none':
-        #    terms = MRCONSO.objects.filter(STR__contains=str)
-        #else:
-        #    sablist = sab.split(',')
-        #    terms = MRCONSO.objects.filter(STR__contains=str).filter(SAB__in=sablist)
         rterms = []
 
         for term in terms:

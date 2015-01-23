@@ -225,3 +225,25 @@ def concept_synonyms_resource_view(request, cui):
           response = request.GET["callback"]+"("+response+")"
 
     return HttpResponse(response)
+
+def code_res_view(request):
+    """Get the full display name of a code for a given code
+
+    GET /codes
+
+    Parameters:
+
+    cui: code
+    sab: Source Vocab
+
+    """
+    code = request.GET.get('code')
+    sab = request.GET.get('sab')
+    rterms =  CodeResource()._get_code(code, sab)
+
+    #Handle AJAX Requests
+    response = json.dumps(rterms, sort_keys=True)
+    if request.GET.has_key("callback"):
+          response = request.GET["callback"]+"("+response+")"
+
+    return HttpResponse(response)

@@ -13,8 +13,6 @@ urlpatterns = patterns('',
     #Mapping Resource View
     url(r'^map/(?P<source_vocab>.+)/(?P<code_val>.+)/(?P<target_vocab>.+)/$', 'umls.views.map_resource_view'),
 
-    url(r'^demo', TemplateView.as_view(template_name="demo.html")),
-
     #Concept Children View
     url(r'^concepts/(?P<cui>.+)/children$', 'umls.views.concept_child_resource_view'),
 
@@ -28,9 +26,11 @@ urlpatterns = patterns('',
     #url(r'^concepts/(?P<cui>.+)/synonym/(?P<sab>.+)/$', 'umls.views.concept_synonym_resource_view'),
     url(r'^concepts$', 'umls.views.concept_term_resource_view'),
 
-    #Concept Term
-    url(r'^concept/(?P<str>.+)/(?P<sab>.+)/$', 'umls.views.concept_term_resource_view'),
-
     #Concept Resource View
     url(r'^concepts/(?P<cui>.+)/$', 'umls.views.concept_resource_view'),
+
+    #Codes Resource View
+    url(r'^codes$', 'umls.views.code_res_view'),
+
+    url(r'^demo', TemplateView.as_view(template_name="demo.html")),
 )

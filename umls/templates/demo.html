@@ -67,6 +67,13 @@
                 return false;
             });
 
+            $("#codes").submit(function(){
+                $.get("/codes?code=" + $("#code").val() + "&sab=" + $("#code_sab").val(), function (response) {
+                    $("#code_results").val(response);
+                });
+                return false;
+            });
+
         });
         
     </script>
@@ -76,7 +83,7 @@
     <h1> Health Vocabulary REST API - Demo</h1> 
 
     <hr>
-<!--
+
     <h2>Lookup Vocabulary Code</h2>
 
     <table class="table">
@@ -150,7 +157,7 @@
             </td>
         </tr>
     </table>
--->
+
     <h2>Concept: Search concepts by term and source terminology (SAB)</h2>
 
     <table class="table">
@@ -250,6 +257,27 @@
             </td>
             <td>
                 <textarea id="concept_synonym_results" style="width:350px;height:80px">
+                </textarea>
+            </td>
+        </tr>
+    </table>
+    <hr>
+
+    <h2>Code: Search all codes.</h2>
+
+    <table class="table">
+        <tr>
+            <td>
+        <form method="GET" action="" id="codes">
+            <label>Code:</label>
+            <input type="text" id="code" name="code" placeholder="D012711" value="D012711">
+            <label>Source Vocabularly:</label>
+            <input type="text" id="code_sab" name="code_sab" placeholder="Source Vocabularly" value="MSH">
+            <input type="submit" value="Synonym" class="btn btn-primary"/>
+        </form>
+            </td>
+            <td>
+                <textarea id="code_results" style="width:350px;height:80px">
                 </textarea>
             </td>
         </tr>
