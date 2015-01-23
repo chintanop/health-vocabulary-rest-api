@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6ad9ac92-aa78-4155-8c76-e655e8a216f7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/umls/templates/demo.html" afterPath="$PROJECT_DIR$/umls/templates/demo.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/umls/resources.py" afterPath="$PROJECT_DIR$/umls/resources.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vocabintf/urls.py" afterPath="$PROJECT_DIR$/vocabintf/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/umls/views.py" afterPath="$PROJECT_DIR$/umls/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="6ad9ac92-aa78-4155-8c76-e655e8a216f7" name="Default" comment="" />
     <ignored path="health-vocabulary-rest-api.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -90,8 +84,8 @@
       <file leaf-file-name="resources.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/umls/resources.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.540146" vertical-offset="2530" max-vertical-offset="3078">
-              <caret line="157" column="25" selection-start-line="157" selection-start-column="25" selection-end-line="157" selection-end-column="25" />
+            <state vertical-scroll-proportion="0.73722625" vertical-offset="2530" max-vertical-offset="3078">
+              <caret line="163" column="21" selection-start-line="163" selection-start-column="21" selection-end-line="163" selection-end-column="21" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
                 <marker date="1421980557978" expanded="true" signature="2926:3155" placeholder="SELECT rel.c..." />
@@ -995,8 +989,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/umls/resources.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.540146" vertical-offset="2530" max-vertical-offset="3078">
-          <caret line="157" column="25" selection-start-line="157" selection-start-column="25" selection-end-line="157" selection-end-column="25" />
+        <state vertical-scroll-proportion="0.73722625" vertical-offset="2530" max-vertical-offset="3078">
+          <caret line="163" column="21" selection-start-line="163" selection-start-column="21" selection-end-line="163" selection-end-column="21" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
             <marker date="1421980557978" expanded="true" signature="2926:3155" placeholder="SELECT rel.c..." />
