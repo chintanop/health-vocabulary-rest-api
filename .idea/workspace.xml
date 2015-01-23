@@ -43,8 +43,8 @@
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vocabintf/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="154" max-vertical-offset="738">
-              <caret line="32" column="11" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="16" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="244" max-vertical-offset="792">
+              <caret line="35" column="66" selection-start-line="35" selection-start-column="66" selection-end-line="35" selection-end-column="66" />
               <folding>
                 <element signature="e#0#51#0" expanded="true" />
               </folding>
@@ -64,26 +64,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="demo.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="demo.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/umls/templates/demo.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.1896552" vertical-offset="4791" max-vertical-offset="5292">
-              <caret line="270" column="46" selection-start-line="270" selection-start-column="46" selection-end-line="270" selection-end-column="46" />
+            <state vertical-scroll-proportion="0.7387755" vertical-offset="1276" max-vertical-offset="5814">
+              <caret line="91" column="8" selection-start-line="91" selection-start-column="8" selection-end-line="91" selection-end-column="8" />
               <folding>
                 <element signature="n#style#0;n#textarea#0;n#td#1;n#tr#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#textarea#0;n#td#1;n#tr#0;n#table#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#textarea#0;n#td#1;n#tr#0;n#table#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#textarea#0;n#td#1;n#tr#0;n#table#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#textarea#0;n#td#1;n#tr#0;n#table#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#textarea#0;n#td#1;n#tr#0;n#table#9;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/umls/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5729927" vertical-offset="4042" max-vertical-offset="4590">
-              <caret line="242" column="0" selection-start-line="242" selection-start-column="0" selection-end-line="242" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="4438" max-vertical-offset="4986">
+              <caret line="263" column="42" selection-start-line="263" selection-start-column="42" selection-end-line="263" selection-end-column="42" />
               <folding>
                 <element signature="e#0#36#0" expanded="true" />
               </folding>
@@ -94,14 +96,14 @@
       <file leaf-file-name="resources.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/umls/resources.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="370" max-vertical-offset="3384">
-              <caret line="43" column="30" selection-start-line="43" selection-start-column="30" selection-end-line="43" selection-end-column="30" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="759" max-vertical-offset="3672">
+              <caret line="52" column="19" selection-start-line="52" selection-start-column="19" selection-end-line="52" selection-end-column="19" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
-                <marker date="1421989237034" expanded="true" signature="3235:3464" placeholder="SELECT rel.c..." />
-                <marker date="1421989237034" expanded="true" signature="3521:3733" placeholder="SELECT rel.c..." />
-                <marker date="1421989237034" expanded="true" signature="4180:4417" placeholder="SELECT rel.c..." />
-                <marker date="1421989237034" expanded="true" signature="4474:4694" placeholder="SELECT rel.c..." />
+                <marker date="1422004244159" expanded="true" signature="3582:3811" placeholder="SELECT rel.c..." />
+                <marker date="1422004244159" expanded="true" signature="3868:4080" placeholder="SELECT rel.c..." />
+                <marker date="1422004244159" expanded="true" signature="4527:4764" placeholder="SELECT rel.c..." />
+                <marker date="1422004244159" expanded="true" signature="4821:5041" placeholder="SELECT rel.c..." />
               </folding>
             </state>
           </provider>
@@ -122,10 +124,10 @@
       <list>
         <option value="$PROJECT_DIR$/umls/models.py" />
         <option value="$PROJECT_DIR$/vocabintf/settings.py" />
-        <option value="$PROJECT_DIR$/umls/resources.py" />
         <option value="$PROJECT_DIR$/vocabintf/urls.py" />
-        <option value="$PROJECT_DIR$/umls/templates/demo.html" />
         <option value="$PROJECT_DIR$/umls/views.py" />
+        <option value="$PROJECT_DIR$/umls/resources.py" />
+        <option value="$PROJECT_DIR$/umls/templates/demo.html" />
       </list>
     </option>
   </component>
@@ -572,6 +574,8 @@
             <element signature="n#style#0;n#textarea#0;n#td#1;n#tr#0;n#table#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#textarea#0;n#td#1;n#tr#0;n#table#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#textarea#0;n#td#1;n#tr#0;n#table#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#textarea#0;n#td#1;n#tr#0;n#table#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#textarea#0;n#td#1;n#tr#0;n#table#9;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -599,10 +603,10 @@
           <caret line="80" column="0" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
-            <marker date="1421989237034" expanded="true" signature="3235:3464" placeholder="SELECT rel.c..." />
-            <marker date="1421989237034" expanded="true" signature="3521:3733" placeholder="SELECT rel.c..." />
-            <marker date="1421989237034" expanded="true" signature="4180:4417" placeholder="SELECT rel.c..." />
-            <marker date="1421989237034" expanded="true" signature="4474:4694" placeholder="SELECT rel.c..." />
+            <marker date="1422004244159" expanded="true" signature="3582:3811" placeholder="SELECT rel.c..." />
+            <marker date="1422004244159" expanded="true" signature="3868:4080" placeholder="SELECT rel.c..." />
+            <marker date="1422004244159" expanded="true" signature="4527:4764" placeholder="SELECT rel.c..." />
+            <marker date="1422004244159" expanded="true" signature="4821:5041" placeholder="SELECT rel.c..." />
           </folding>
         </state>
       </provider>
@@ -642,6 +646,8 @@
             <element signature="n#style#0;n#textarea#0;n#td#1;n#tr#0;n#table#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#textarea#0;n#td#1;n#tr#0;n#table#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#textarea#0;n#td#1;n#tr#0;n#table#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#textarea#0;n#td#1;n#tr#0;n#table#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#textarea#0;n#td#1;n#tr#0;n#table#9;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -662,10 +668,10 @@
           <caret line="67" column="20" selection-start-line="67" selection-start-column="20" selection-end-line="67" selection-end-column="20" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
-            <marker date="1421989237034" expanded="true" signature="3235:3464" placeholder="SELECT rel.c..." />
-            <marker date="1421989237034" expanded="true" signature="3521:3733" placeholder="SELECT rel.c..." />
-            <marker date="1421989237034" expanded="true" signature="4180:4417" placeholder="SELECT rel.c..." />
-            <marker date="1421989237034" expanded="true" signature="4474:4694" placeholder="SELECT rel.c..." />
+            <marker date="1422004244159" expanded="true" signature="3582:3811" placeholder="SELECT rel.c..." />
+            <marker date="1422004244159" expanded="true" signature="3868:4080" placeholder="SELECT rel.c..." />
+            <marker date="1422004244159" expanded="true" signature="4527:4764" placeholder="SELECT rel.c..." />
+            <marker date="1422004244159" expanded="true" signature="4821:5041" placeholder="SELECT rel.c..." />
           </folding>
         </state>
       </provider>
@@ -714,6 +720,8 @@
             <element signature="n#style#0;n#textarea#0;n#td#1;n#tr#0;n#table#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#textarea#0;n#td#1;n#tr#0;n#table#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#textarea#0;n#td#1;n#tr#0;n#table#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#textarea#0;n#td#1;n#tr#0;n#table#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#textarea#0;n#td#1;n#tr#0;n#table#9;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -734,10 +742,10 @@
           <caret line="67" column="20" selection-start-line="67" selection-start-column="20" selection-end-line="67" selection-end-column="20" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
-            <marker date="1421989237034" expanded="true" signature="3235:3464" placeholder="SELECT rel.c..." />
-            <marker date="1421989237034" expanded="true" signature="3521:3733" placeholder="SELECT rel.c..." />
-            <marker date="1421989237034" expanded="true" signature="4180:4417" placeholder="SELECT rel.c..." />
-            <marker date="1421989237034" expanded="true" signature="4474:4694" placeholder="SELECT rel.c..." />
+            <marker date="1422004244159" expanded="true" signature="3582:3811" placeholder="SELECT rel.c..." />
+            <marker date="1422004244159" expanded="true" signature="3868:4080" placeholder="SELECT rel.c..." />
+            <marker date="1422004244159" expanded="true" signature="4527:4764" placeholder="SELECT rel.c..." />
+            <marker date="1422004244159" expanded="true" signature="4821:5041" placeholder="SELECT rel.c..." />
           </folding>
         </state>
       </provider>
@@ -786,6 +794,8 @@
             <element signature="n#style#0;n#textarea#0;n#td#1;n#tr#0;n#table#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#textarea#0;n#td#1;n#tr#0;n#table#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#textarea#0;n#td#1;n#tr#0;n#table#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#textarea#0;n#td#1;n#tr#0;n#table#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#textarea#0;n#td#1;n#tr#0;n#table#9;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -806,10 +816,10 @@
           <caret line="67" column="20" selection-start-line="67" selection-start-column="20" selection-end-line="67" selection-end-column="20" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
-            <marker date="1421989237034" expanded="true" signature="3235:3464" placeholder="SELECT rel.c..." />
-            <marker date="1421989237034" expanded="true" signature="3521:3733" placeholder="SELECT rel.c..." />
-            <marker date="1421989237034" expanded="true" signature="4180:4417" placeholder="SELECT rel.c..." />
-            <marker date="1421989237034" expanded="true" signature="4474:4694" placeholder="SELECT rel.c..." />
+            <marker date="1422004244159" expanded="true" signature="3582:3811" placeholder="SELECT rel.c..." />
+            <marker date="1422004244159" expanded="true" signature="3868:4080" placeholder="SELECT rel.c..." />
+            <marker date="1422004244159" expanded="true" signature="4527:4764" placeholder="SELECT rel.c..." />
+            <marker date="1422004244159" expanded="true" signature="4821:5041" placeholder="SELECT rel.c..." />
           </folding>
         </state>
       </provider>
@@ -858,6 +868,8 @@
             <element signature="n#style#0;n#textarea#0;n#td#1;n#tr#0;n#table#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#textarea#0;n#td#1;n#tr#0;n#table#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#textarea#0;n#td#1;n#tr#0;n#table#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#textarea#0;n#td#1;n#tr#0;n#table#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#textarea#0;n#td#1;n#tr#0;n#table#9;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -878,10 +890,10 @@
           <caret line="67" column="20" selection-start-line="67" selection-start-column="20" selection-end-line="67" selection-end-column="20" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
-            <marker date="1421989237034" expanded="true" signature="3235:3464" placeholder="SELECT rel.c..." />
-            <marker date="1421989237034" expanded="true" signature="3521:3733" placeholder="SELECT rel.c..." />
-            <marker date="1421989237034" expanded="true" signature="4180:4417" placeholder="SELECT rel.c..." />
-            <marker date="1421989237034" expanded="true" signature="4474:4694" placeholder="SELECT rel.c..." />
+            <marker date="1422004244159" expanded="true" signature="3582:3811" placeholder="SELECT rel.c..." />
+            <marker date="1422004244159" expanded="true" signature="3868:4080" placeholder="SELECT rel.c..." />
+            <marker date="1422004244159" expanded="true" signature="4527:4764" placeholder="SELECT rel.c..." />
+            <marker date="1422004244159" expanded="true" signature="4821:5041" placeholder="SELECT rel.c..." />
           </folding>
         </state>
       </provider>
@@ -994,37 +1006,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/umls/resources.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="370" max-vertical-offset="3384">
-          <caret line="43" column="30" selection-start-line="43" selection-start-column="30" selection-end-line="43" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-            <marker date="1421989237034" expanded="true" signature="3235:3464" placeholder="SELECT rel.c..." />
-            <marker date="1421989237034" expanded="true" signature="3521:3733" placeholder="SELECT rel.c..." />
-            <marker date="1421989237034" expanded="true" signature="4180:4417" placeholder="SELECT rel.c..." />
-            <marker date="1421989237034" expanded="true" signature="4474:4694" placeholder="SELECT rel.c..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/umls/templates/demo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.1896552" vertical-offset="4791" max-vertical-offset="5292">
-          <caret line="270" column="46" selection-start-line="270" selection-start-column="46" selection-end-line="270" selection-end-column="46" />
-          <folding>
-            <element signature="n#style#0;n#textarea#0;n#td#1;n#tr#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#textarea#0;n#td#1;n#tr#0;n#table#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#textarea#0;n#td#1;n#tr#0;n#table#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#textarea#0;n#td#1;n#tr#0;n#table#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vocabintf/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="154" max-vertical-offset="738">
-          <caret line="32" column="11" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="16" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="244" max-vertical-offset="792">
+          <caret line="35" column="66" selection-start-line="35" selection-start-column="66" selection-end-line="35" selection-end-column="66" />
           <folding>
             <element signature="e#0#51#0" expanded="true" />
           </folding>
@@ -1033,10 +1018,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/umls/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5729927" vertical-offset="4042" max-vertical-offset="4590">
-          <caret line="242" column="0" selection-start-line="242" selection-start-column="0" selection-end-line="242" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="4438" max-vertical-offset="4986">
+          <caret line="263" column="42" selection-start-line="263" selection-start-column="42" selection-end-line="263" selection-end-column="42" />
           <folding>
             <element signature="e#0#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/umls/resources.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="759" max-vertical-offset="3672">
+          <caret line="52" column="19" selection-start-line="52" selection-start-column="19" selection-end-line="52" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+            <marker date="1422004244159" expanded="true" signature="3582:3811" placeholder="SELECT rel.c..." />
+            <marker date="1422004244159" expanded="true" signature="3868:4080" placeholder="SELECT rel.c..." />
+            <marker date="1422004244159" expanded="true" signature="4527:4764" placeholder="SELECT rel.c..." />
+            <marker date="1422004244159" expanded="true" signature="4821:5041" placeholder="SELECT rel.c..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/umls/templates/demo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7387755" vertical-offset="1276" max-vertical-offset="5814">
+          <caret line="91" column="8" selection-start-line="91" selection-start-column="8" selection-end-line="91" selection-end-column="8" />
+          <folding>
+            <element signature="n#style#0;n#textarea#0;n#td#1;n#tr#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#textarea#0;n#td#1;n#tr#0;n#table#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#textarea#0;n#td#1;n#tr#0;n#table#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#textarea#0;n#td#1;n#tr#0;n#table#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#textarea#0;n#td#1;n#tr#0;n#table#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#textarea#0;n#td#1;n#tr#0;n#table#9;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

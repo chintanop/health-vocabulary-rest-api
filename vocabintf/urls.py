@@ -32,5 +32,8 @@ urlpatterns = patterns('',
     #Codes Resource View
     url(r'^codes$', 'umls.views.code_res_view'),
 
+    #Codes Resource View
+    url(r'^codes/(?P<code>.+)/sab/(?P<sab>.+)/$', 'umls.views.code_det_view'),
+
     url(r'^demo', TemplateView.as_view(template_name="demo.html")),
 )

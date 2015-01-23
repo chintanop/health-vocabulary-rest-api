@@ -46,6 +46,22 @@ class CodeResource:
 
         return rterms
 
+    def _get_code_det(self, code, sab):
+
+        terms = MRCONSO.objects.filter(CODE=code, SAB=sab)
+
+        rterms = []
+
+        for term in terms:
+            rterms.append({
+                'code':term.CODE,
+                'sab':term.SAB,
+                'cuis':term.CUI,
+                'str':term.STR,
+            })
+
+        return rterms
+
 
 class RelResource:
     """ The Terminology Relationship resource """

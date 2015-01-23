@@ -74,6 +74,13 @@
                 return false;
             });
 
+            $("#codes_detail").submit(function(){
+                $.get("/codes/" + $("#detail_code").val() + "/sab/" + $("#detail_code_sab").val(), function (response) {
+                    $("#detail_code_results").val(response);
+                });
+                return false;
+            });
+
         });
         
     </script>
@@ -283,6 +290,28 @@
         </tr>
     </table>
     <hr>
+
+    <hr>
+
+    <h2>Code: Get details about a code.</h2>
+
+    <table class="table">
+        <tr>
+            <td>
+        <form method="GET" action="" id="codes_detail">
+            <label>Code:</label>
+            <input type="text" id="detail_code" name="detail_code" placeholder="D012711" value="D012711">
+            <label>Source Vocabularly:</label>
+            <input type="text" id="detail_code_sab" name="detail_code_sab" placeholder="Source Vocabularly" value="MSH">
+            <input type="submit" value="Synonym" class="btn btn-primary"/>
+        </form>
+            </td>
+            <td>
+                <textarea id="detail_code_results" style="width:350px;height:80px">
+                </textarea>
+            </td>
+        </tr>
+    </table>
 
     </div>
 </body>

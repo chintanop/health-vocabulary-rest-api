@@ -247,3 +247,25 @@ def code_res_view(request):
           response = request.GET["callback"]+"("+response+")"
 
     return HttpResponse(response)
+
+
+def code_det_view(request, code, sab):
+    """Get the full display name of a code for a given code
+
+    GET /codes/<cui>/sab/<sab>
+
+    Parameters:
+
+    cui: code
+    sab: Source Vocab
+
+    """
+
+    rterms =  CodeResource()._get_code_det(code, sab)
+
+    #Handle AJAX Requests
+    response = json.dumps(rterms, sort_keys=True)
+    if request.GET.has_key("callback"):
+          response = request.GET["callback"]+"("+response+")"
+
+    return HttpResponse(response)
