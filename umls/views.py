@@ -74,31 +74,6 @@ def map_resource_view(request, source_vocab, code_val, target_vocab):
 
     return HttpResponse(response)
 
-def concept_child_resource_view1(request, str, sab):
-    """Get the full display name of a code for a given concept
-
-    GET /concept/<str>/<sab>
-
-    Parameters:
-
-    str: Term
-    sab: Source Vocab
-
-    """
-    if sab =='children':
-        rterms =  ConceptResource()._get_children(str)
-    elif sab =='parent':
-        rterms =  ConceptResource()._get_parent(str)
-    else:
-        rterms =  ConceptResource()._get_term(str, sab)
-
-    #Handle AJAX Requests
-    response = json.dumps(rterms, sort_keys=True)
-    if request.GET.has_key("callback"):
-          response = request.GET["callback"]+"("+response+")"
-
-    return HttpResponse(response)
-
 def concept_resource_view(request, cui):
     """Get the full display name of a code for a given concept
 
@@ -115,8 +90,9 @@ def concept_resource_view(request, cui):
 
     #Handle AJAX Requests
     response = json.dumps(rterms, sort_keys=True)
+    print response
     if request.GET.has_key("callback"):
-          response = request.GET["callback"]+"("+response+")"
+        response = request.GET["callback"]+"("+response+")"
 
     return HttpResponse(response)
 
@@ -242,6 +218,7 @@ def code_res_view(request):
     rterms =  CodeResource()._get_code(code, sab)
 
     #Handle AJAX Requests
+
     response = json.dumps(rterms, sort_keys=True)
     if request.GET.has_key("callback"):
           response = request.GET["callback"]+"("+response+")"
