@@ -1,7 +1,5 @@
 from django.db import models
 
-from django.db import models
-
 class MRREL (models.Model):
 	CUI1 	= models.CharField(max_length=8)	
 	REL  	= models.CharField(max_length=2)
@@ -21,6 +19,14 @@ class MRCONSO (models.Model):
 	SAB 	= models.CharField(max_length=20) 
 	class Meta:
 		db_table = 'MRCONSO'
+
+class ISA(models.Model):
+	""" The expanded ISA table """
+	CHILD_CUI 	= models.CharField(max_length=8, db_index=True)
+	PARENT_CUI 	= models.CharField(max_length=8, db_index=True)
+	SAB 		= models.CharField(max_length=20, db_index=True) 
+	class Meta:
+		db_table = 'ISA'
 
 
 """class MRSTY (models.Model):
