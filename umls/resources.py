@@ -108,12 +108,16 @@ class ConceptResource:
     def _get(self, cui):
         terms = MRCONSO.objects.filter(CUI=cui)
         rterms = []
+        STR_list=[]
+        SAB_list=[]
         for term in terms:
-            rterms.append({
-                'concept':term.CUI,
-                'terms':term.STR,
-                'sabs':term.SAB,
-            })
+            STR_list.append(term.STR)
+            SAB_list.append(term.SAB)
+        rterms.append({
+            'concept':cui,
+            'terms':STR_list,
+            'sabs':SAB_list,
+        })
 
         return rterms
 
@@ -123,9 +127,9 @@ class ConceptResource:
             sablist = sab.split(',')
             print sab
             print 'sablist' + sab
-            terms = MRCONSO.objects.filter(STR__contains=str).filter(SAB__in=sablist)
+            terms = MRCONSO.objects.filter(STR__contains=str).filter(SAB__in=sablist).order_by('CUI')
         else:
-            terms = MRCONSO.objects.filter(STR__contains=str)
+            terms = MRCONSO.objects.filter(STR__contains=str).order_by('CUI')
 
         rterms = []
 
