@@ -164,9 +164,9 @@ class ConceptListResource:
             query += " SAB IN (%(sabs)s) AND "
 
         if partial:
-            query += " STR LIKE %(str)s "
+            query += " CONVERT(STR using latin1) LIKE %(str)s "
         else:
-            query += " STR = %(str)s "
+            query += " CONVERT(STR using latin1) = %(str)s "
 
         query += " GROUP BY CUI"  # since we need "Concept" objects
 
@@ -204,7 +204,7 @@ class ConceptListResource:
                     FROM `MRREL` rel
                     WHERE
                         rel.cui1 = %s  AND
-                        rel.rel = 'PAR '
+                        rel.rel = 'CHD'
                         """
         if sab:
             query += " AND rel.sab = %s  "
@@ -234,7 +234,6 @@ class ConceptListResource:
         cursor = connection.cursor()
 
         if explode:
-            print "EXPLODING"
             return self._get_exploded_hierarchy(cui, sab, "CHD")
 
         query = """SELECT
@@ -242,7 +241,7 @@ class ConceptListResource:
                     FROM `MRREL` rel
                     WHERE
                         rel.cui1 = %s  AND
-                        rel.rel = 'CHD'
+                        rel.rel = 'PAR'
                         """
         if sab:
             query += " AND rel.sab = %s  "
