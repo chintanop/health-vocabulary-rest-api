@@ -38,6 +38,8 @@ urlpatterns = patterns('',
                        url(r'^concepts$',
                            'umls.views.concept_term_resource_view'),
 
+                       url(r'^concepts_bulk$',
+                           'umls.views.concepts_bulk_resource_view'),
 
                        # Codes Resource View
                        url(r'^codes$', 'umls.views.code_res_view'),
