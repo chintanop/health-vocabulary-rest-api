@@ -122,6 +122,7 @@ def concept_term_resource_view(request):
     sab = None
     partial = False
     tty = None
+    sty = None
 
     if 'term' in request.GET:
         term = request.GET['term']
@@ -133,8 +134,10 @@ def concept_term_resource_view(request):
             partial = True
     if 'tty' in request.GET:
         tty = request.GET['tty']
+    if 'sty' in request.GET:
+        sty = request.GET['sty']
 
-    rterms = ConceptListResource()._get(term, sab, tty, partial)
+    rterms = ConceptListResource()._get(term, sab, tty, partial, sty)
 
     # Handle AJAX Requests
     response = json.dumps(rterms, sort_keys=True)
