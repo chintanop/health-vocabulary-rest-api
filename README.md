@@ -3,7 +3,7 @@ HaVOC - Health Vocabulary REST API
 <p>HaVoc is the most developer friendly API that gives you access to hundreds of source vocabularies in the UMLS and to retrieve synonyms for a given medical concept, its parent/children concepts and translations across different vocabularies, <a href="http://havoc.appliedinformaticsinc.com/about/" ><b>learn more</b></a> on what the API is used for.</p>
 A swiss-army knife for all health/biomedical terminology/vocabulary related functions. Perform terminology queries on SNOMED-CT, LOINC, RXNORM or any of the 160 vocabularies in the [Unified Medical Language System](http://www.nlm.nih.gov/research/umls/). (Note: a separate download/license is required from the [NLM site](https://uts.nlm.nih.gov//license.html) to use this tool) 
 
-Here is a [Demo Site](http://havoc.appliedinformaticsinc.com/?demo)
+Here is a [Demo Site](http://havoc.appliedinformaticsinc.com/?demo), with usage and documentation.
 
 API operations
 --------------
@@ -50,6 +50,7 @@ http://havoc.appliedinformaticsinc.com/concepts_bulk?terms=neoplasms:diabetes&sa
 **3. GET /concepts/:cui**
 
 Get full details for a concept (specified by CUI)
+
 Parameters:
 **cui**: concept id
 
@@ -233,6 +234,13 @@ Install/Set up
 5. Run the app, python manage.py runserver
 6. For production environment, it is advised to host the app inside a [WSGI](https://docs.djangoproject.com/en/dev/howto/deployment/wsgi/) container.
 
+More resources:
+----------
+
+ - http://blog.appliedinformaticsinc.com/getting-started-with-metamorphosys-the-umls-installation-tool/
+ - http://blog.appliedinformaticsinc.com/umls-metathesaurs-tool-mysql-load-scripts-database-browse/
+ - http://blog.appliedinformaticsinc.com/umls-metathesaurs-loading-umls-schema-data-to-mysql/
+ - http://blog.appliedinformaticsinc.com/rest-api-over-umls-terminologies/
 
 TODOs
 -----
