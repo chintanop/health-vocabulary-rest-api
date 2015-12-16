@@ -303,3 +303,32 @@ def concepts_bulk_resource_view(request):
         response = request.GET["callback"]+"("+response+")"
 
     return HttpResponse(response)
+
+
+def concepts_bulk_par_resource_view(request, cui_list):
+    """Get the list of parents for a given concept-parent list
+    GET /concepts_bulk/<cui1>,<cui2>,<cui3>,..,<cuiN>/parent
+    Parameters:
+    cui_list: list of cuis
+    sab: Source Vocab
+    """
+    sab = request.GET.get('sab')
+    explode = False
+    eint = request.GET.get('explode', None)
+    if eint and eint == "1":
+        explode = True
+    cui_list = cui_list.split(',')
+    cui_list = set(cui_list)
+    
+    rterms = {}
+    for cui in cui_list:
+        value = ConceptListResource()._get_parent(cui,sab,explode)
+        # Removing duplicates
+        rterms[cui] = { d['cui']:d for d in value }.values()
+        
+    # Handle AJAX Requests
+    response = json.dumps(rterms, sort_keys=True)
+    if 'callback' in request.GET:
+        response = request.GET["callback"]+"("+response+")"
+
+    return HttpResponse(response)
