@@ -154,7 +154,7 @@ class ConceptListResource:
 
         cursor = connection.cursor()
 
-        query_base = """SELECT CUI,
+        query_base = """SELECT MRCONSO.CUI,
                       GROUP_CONCAT(DISTINCT STR SEPARATOR '|') as terms,
                       GROUP_CONCAT(DISTINCT SAB SEPARATOR '|') as sabs,
                       GROUP_CONCAT(ISPREF SEPARATOR '|') as is_prefs
