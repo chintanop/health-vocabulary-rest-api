@@ -16,9 +16,9 @@ Search concepts by term and source terminology (SAB)
 Parameters:
 
  - **term:** Any source medical term, e.g. diabetes 
- - sabs: A comma separated list of source vocabularies to restrict the concepts
- - tty: Source term type to restrict the terms, e.g. PT for 'designated preferred name', MH for 'main heading'
- - sty - Semantic type to restrict the terms, e.g.T047 for 'Disease or Syndrome', T200 for 'Clinical Drug'
+ - sabs: A comma separated list of source vocabularies to restrict the concepts. The full list of vocabulary abbreviations is available [here](https://www.nlm.nih.gov/research/umls/sourcereleasedocs/index.html).
+ - tty: Source term type to restrict the terms, e.g. PT for 'designated preferred name', MH for 'main heading'. The full list of source term types is available [here](https://www.nlm.nih.gov/research/umls/knowledge_sources/metathesaurus/release/abbreviations.html).
+ - sty - Semantic type to restrict the terms, e.g.T047 for 'Disease or Syndrome', T200 for 'Clinical Drug'. The full list of semantic types is available [here](https://metamap.nlm.nih.gov/Docs/SemanticTypes_2013AA.txt).
  - partial: 1/0 (if partial=1 then term will be partial term matches
    will be returned. if partial =0 then all matches will be returned.
    default =0)
@@ -52,6 +52,7 @@ http://havoc.appliedinformaticsinc.com/concepts_bulk?terms=neoplasms:diabetes&sa
 Get full details for a concept (specified by CUI)
 
 Parameters:
+
 **cui**: concept id
 
 Returns
@@ -139,7 +140,7 @@ Parameters:
    degree: Control the number of hops in the graph
  - **rel_type:** The
    relationship to be looked up, e.g. is_diagnosed_by,
-   causative_agent_of.
+   causative_agent_of. The full list of relationship attribute types is available [here](https://www.nlm.nih.gov/research/umls/knowledge_sources/metathesaurus/release/abbreviations.html).
 
 Returns:
 A list of Concept objects
