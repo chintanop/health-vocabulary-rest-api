@@ -150,7 +150,7 @@ class ConceptListResource:
 
     """ Return a list of concepts """
 
-    def _get(self, str, sabs, partial=False):
+    def _get(self, str, sabs, tty=False, partial=False):
 
         cursor = connection.cursor()
 
@@ -163,6 +163,9 @@ class ConceptListResource:
         if sabs:
             query += " SAB IN (%(sabs)s) AND "
 
+        if tty:
+            query += " TTY IN (%(tty)s) AND "
+
         if partial:
             query += " CONVERT(STR using latin1) LIKE %(str)s "
         else:
@@ -171,7 +174,8 @@ class ConceptListResource:
         query += " GROUP BY CUI"  # since we need "Concept" objects
 
         cursor.execute(query, {"sabs": sabs,
-                               "str": str})
+                               "str": str,
+                               "tty":tty})
         rterms = []
 
         for row in cursor.fetchall():
