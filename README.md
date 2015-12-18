@@ -4,21 +4,21 @@ HaVoc a simple REST API to quickly build smart health apps powered by health/bio
 
 Some use-cases:
 
-1. Get all synonyms, abbreviations of a medical term:  “CHF” => congestive heart failure, heart failure and so on. Access over 12.8 million synonym terms.
+1. Get all synonyms, abbreviations of a medical term:  *“CHF” => congestive heart failure, heart failure* and so on. Access over **12.8 million** synonym terms.
 
-2. Perform class based queries, e.g. get all drug brand names for all antibiotics
+2. Perform class based queries, e.g. get all *drug* brand names for all *antibiotics*
 
-3. Create an “autosuggest” dropdown for disease names or symptoms or even gene names. 
+3. Create an “autosuggest” dropdown for *disease* names or *symptoms* or even *gene* names. 
 
-4. Get related terms, e.g. get all body parts/anatomical organs related to a disease
+4. Get related terms, e.g. get all *body parts/anatomical* organs related to a *disease*
 
 5. Translate/Map codes between 190 biomedical vocabularies and across languages, e.g. Spanish to English and vice versa. 
 
 Additional Benefits:
 
-- Roll you own internal vocabulary and perform all the operations above 
-- Use Docker instances to create a load balanced cluster setup
-- Battle tested in production use in several Healthcare web apps, big data applications using Solr, Elastic Search and Apache Spark.
+- Roll you **own internal vocabulary** and perform all the operations above 
+- Use Docker instances to create a **load balanced cluster** setup
+- Battle tested in **production use** in several Healthcare web apps, big data applications using Solr, Elastic Search and Apache Spark.
 
 Try the [HaVoc Demo](http://havoc.appliedinformaticsinc.com/?demo)
 
