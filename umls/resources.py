@@ -150,18 +150,28 @@ class ConceptListResource:
 
     """ Return a list of concepts """
 
-    def _get(self, str, sabs, partial=False):
+    def _get(self, str, sabs, tty=False, partial=False, tui=False):
 
         cursor = connection.cursor()
 
-        query_base = """SELECT CUI,
+        query_base = """SELECT MRCONSO.CUI,
                       GROUP_CONCAT(DISTINCT STR SEPARATOR '|') as terms,
                       GROUP_CONCAT(DISTINCT SAB SEPARATOR '|') as sabs,
                       GROUP_CONCAT(ISPREF SEPARATOR '|') as is_prefs
-                      FROM MRCONSO WHERE """
+                      FROM """
         query = query_base
+        
+        if tui:
+            query += " MRCONSO,MRSTY WHERE MRCONSO.CUI=MRSTY.CUI AND " 
+            query += " MRSTY.tui = %(tui)s AND"
+        else:
+            query += " MRCONSO WHERE "
+        
         if sabs:
             query += " SAB IN (%(sabs)s) AND "
+
+        if tty:
+            query += " TTY IN (%(tty)s) AND "
 
         if partial:
             query += " CONVERT(STR using latin1) LIKE %(str)s "
@@ -171,7 +181,9 @@ class ConceptListResource:
         query += " GROUP BY CUI"  # since we need "Concept" objects
 
         cursor.execute(query, {"sabs": sabs,
-                               "str": str})
+                               "str": str,
+                               "tty":tty,
+                               "tui": tui})
         rterms = []
 
         for row in cursor.fetchall():

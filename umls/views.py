@@ -121,6 +121,8 @@ def concept_term_resource_view(request):
     term = None
     sab = None
     partial = False
+    tty = None
+    sty = None
 
     if 'term' in request.GET:
         term = request.GET['term']
@@ -130,8 +132,12 @@ def concept_term_resource_view(request):
         pint = request.GET['partial']
         if pint == "1":
             partial = True
+    if 'tty' in request.GET:
+        tty = request.GET['tty']
+    if 'sty' in request.GET:
+        sty = request.GET['sty']
 
-    rterms = ConceptListResource()._get(term, sab, partial)
+    rterms = ConceptListResource()._get(term, sab, tty, partial, sty)
 
     # Handle AJAX Requests
     response = json.dumps(rterms, sort_keys=True)
@@ -260,6 +266,72 @@ def code_det_view(request, code, sab):
 
     rterms = CodeResource()._get_code_det(code, sab)
 
+    # Handle AJAX Requests
+    response = json.dumps(rterms, sort_keys=True)
+    if 'callback' in request.GET:
+        response = request.GET["callback"]+"("+response+")"
+
+    return HttpResponse(response)
+
+
+def concepts_bulk_resource_view(request):
+    """Get the list of concepts for a given list of terms
+    GET /concepts_bulk?terms=term1,term2
+    Parameters:
+    terms: List of Terms
+    sab: Source Vocab
+    delimiter: delimiter between terms, default = ','
+    """
+    terms = None
+    sab = None
+    partial = None
+    delimiter = ','
+
+    if 'delimiter' in request.GET:
+        delimiter = request.GET['delimiter']
+    if 'terms' in request.GET:
+        terms = request.GET['terms']
+        terms = set(terms.split(delimiter))
+    if 'sab' in request.GET:
+        sab = request.GET['sab']
+    if 'partial' in request.GET:
+        pint = request.GET['partial']
+        if pint == "1":
+            partial = True
+    
+    rterms = []
+    for term in terms:
+            rterms.extend(ConceptListResource()._get(term,sab,partial))
+
+    # Handle AJAX Requests
+    response = json.dumps(rterms, sort_keys=True)
+    if 'callback' in request.GET:
+        response = request.GET["callback"]+"("+response+")"
+
+    return HttpResponse(response)
+
+
+def concepts_bulk_par_resource_view(request, cui_list):
+    """Get the list of parents for a given concept-parent list
+    GET /concepts_bulk/<cui1>,<cui2>,<cui3>,..,<cuiN>/parent
+    Parameters:
+    cui_list: list of cuis
+    sab: Source Vocab
+    """
+    sab = request.GET.get('sab')
+    explode = False
+    eint = request.GET.get('explode', None)
+    if eint and eint == "1":
+        explode = True
+    cui_list = cui_list.split(',')
+    cui_list = set(cui_list)
+    
+    rterms = {}
+    for cui in cui_list:
+        value = ConceptListResource()._get_parent(cui,sab,explode)
+        # Removing duplicates
+        rterms[cui] = { d['cui']:d for d in value }.values()
+        
     # Handle AJAX Requests
     response = json.dumps(rterms, sort_keys=True)
     if 'callback' in request.GET:
