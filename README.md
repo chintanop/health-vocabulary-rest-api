@@ -1,6 +1,6 @@
 HaVOC - Health Vocabulary REST API
 ==========================
-HaVoc a simple REST API to quickly build smart health apps powered by health/biomedical vocabularies. 
+HaVoc a simple REST API to quickly integrate smart semantic search capabilities in your health apps. Use HaVoc to leverage the knowledge of hundreds of health/biomedical vocabularies spanning millions of medical terms and relationships in a jiffy. 
 
 Some use-cases:
 
