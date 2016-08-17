@@ -20,7 +20,6 @@ Additional Benefits:
 - Use Docker instances to create a **load balanced cluster** setup
 - Battle tested in **production use** in several Healthcare web apps, big data applications using Solr, Elastic Search and Apache Spark.
 
-Try the [HaVoc Demo](http://havoc.appliedinformaticsinc.com/?demo)
 
 API operations
 --------------
@@ -43,7 +42,6 @@ Parameters:
 Returns:
 A list of concept objects
 
-Example: http://havoc.appliedinformaticsinc.com/concepts?term=neoplasms&sabs=MSH&tty=MH&sty=T191&partial=0&demo=true
 
 
 **2. GET /concepts_bulk**
@@ -60,9 +58,6 @@ Parameters:
 Returns:
 A list of concept objects
 
-Example: 
-http://havoc.appliedinformaticsinc.com/concepts_bulk?terms=neoplasms:diabetes&sabs=MSH&partial=0&delimiter=:&demo=true
-
 
 **3. GET /concepts/:cui**
 
@@ -74,9 +69,6 @@ Parameters:
 
 Returns
 A Concept object
-
-Example:
-http://havoc.appliedinformaticsinc.com/concepts/C0027651?demo=true
 
 
 **4. GET /concepts/:cui/children**
@@ -94,9 +86,6 @@ Parameters:
 Returns:
 A list of Concept objects
 
-Example:
-http://havoc.appliedinformaticsinc.com/concepts/C0027651/children?sabs=MSH&explode=0&demo=true
-
 
 **5. GET /concepts/:cui/parents**
 
@@ -109,9 +98,6 @@ Parameters:
 
 Returns:
 A list of Concept objects
-
-Example:
-http://havoc.appliedinformaticsinc.com/concepts/C0027651/parents?sabs=MSH&explode=0&demo=true
 
 
 **6. GET /concepts_bulk/:cui,:cui,:cui/parents**
@@ -127,9 +113,6 @@ Parameters:
 Returns:
 A list of Concept objects for each provided CUI
 
-Example: 
-http://havoc.appliedinformaticsinc.com/concepts_bulk/C0027651,%20C0006826/parents?demo=true
-
 
 **7. GET /concepts/:cui/synonyms**
 
@@ -143,8 +126,6 @@ Parameters:
 Returns:
 A list of strings, e.g. [“diabetes”, “diabetes type 2”,...]
 
-Example:
-http://havoc.appliedinformaticsinc.com/concepts/C0027651/synonyms?demo=true
 
 **8. GET /rel/:sab/:code/:rel_type**
 
@@ -161,9 +142,6 @@ Parameters:
 
 Returns:
 A list of Concept objects
-
-Example:
-http://havoc.appliedinformaticsinc.com/rel/MSH/D009369/associated_with/?demo=true
 
 **
 
@@ -184,8 +162,6 @@ Parameters:
 Returns:
 A list of Code objects
 
-Example:
-http://havoc.appliedinformaticsinc.com/codes?code=D009369&sab=MSH&demo=true
 
 **10. GET /codes/:code/sabs/:sab**
 
@@ -199,9 +175,6 @@ Parameters:
 Returns:
 A Code object
 
-Example:
-http://havoc.appliedinformaticsinc.com/codes/D009369/sab/MSH/?demo=true
-
 **11. GET /codes/:code1/sabs/:sab1/mapping/:sab2**
 
 Get semantically equivalent mappings for code1 in sab1 in sab2
@@ -214,9 +187,6 @@ Parameters:
 
 Returns:
 A list of Code objects (one or more mappings)
-
-Example:
-http://havoc.appliedinformaticsinc.com/map/MSH/D009369/WHO/?demo=true
 
 
 * * *
